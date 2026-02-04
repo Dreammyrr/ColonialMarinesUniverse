@@ -12,7 +12,7 @@
     sections:
     - name: Fatigues
       entries:
-      - id: AU14UPPFatigues
+      - id: AU14FatiguesUPP
         amount: 25
     - name: Footwear
       entries:
@@ -76,22 +76,20 @@
         amount: 1
     - name: Belts
       entries:
-      - id: CMBeltMarine
+      - id: AU14BeltMarineUPP
         amount: 25
       - id: RMCBeltGrenade
         amount: 2
-      - id: RMCM276ShotgunShellLoadingRig
+      - id: AU14ShotgunShellLoadingRigUPP
         amount: 2
-      - id: RMCBeltHolsterPistol
-        amount: 15
-      - id: RMCBeltHolsterRevolver
+      - id: AU14BeltHolsterPistolUPP
         amount: 15
 #      - id: M276 Pattern M82F Holster Rig
 #        amount: 5
       - id: CMBeltKnifeFilled
         name: M276 Knife Rig (Full)
         amount: 1
-      - id: RMCBeltUtilityGeneral
+      - id: AU14BeltUtilityGeneralUPP
         amount: 15
     - name: Pouches
       entries:
@@ -117,7 +115,7 @@
         amount: 15
       - id: RMCPouchMagazinePistolLarge
         amount: 2
-      - id: RMCPouchPistol
+      - id: AU14PouchPistolAlt
         amount: 15
       - id: RMCPouchConstruction
         amount: 1
@@ -188,14 +186,14 @@
     sections:
     - name: Food
       entries:
-      - id: CMMRE
+      - id: RMCMRESPP
         name: MRE
         amount: 30
-      - id: RMCBoxMRE
+      - id: AU14BoxMREUPP
         amount: 5
     - name: Tools
       entries:
-      - id: RMCM5Bayonet
+      - id: RMCCombatUtilityKnifeA
         amount: 15
       - id: CMScrewdriver
         amount: 5
@@ -299,8 +297,8 @@
     - name: Medical Storage
       choices: { CMUPlatoonMedicalStorage: 1 }
       entries:
-      - id: CMBeltMedical
-      - id: CMBeltMedicBag
+      - id: AU14BeltMedicalUPP
+      - id: AU14BeltMedicBagUPP
     - name: General Medical Supplies
       entries:
       - id: AU14HemostaticGauzePacket
@@ -374,7 +372,7 @@
     - name: Fatigues
       choices: { CMUPlatoonAirCrewFatigues: 1 }
       entries:
-      - id: AU14UPPFatigues
+      - id: AU14BoilerFatiguesUPP
     - name: Body Armor
       choices: { CMUPlatoonAirCrewVest: 1 }
       entries:
@@ -410,9 +408,8 @@
     - name: Belts
       choices: { CMUPlatoonAirCrewBelts: 1 }
       entries:
-      - id: RMCBeltHolsterPistol
-      - id: RMCBeltHolsterRevolver
-      - id: RMCBeltUtilityGeneral
+      - id: AU14BeltHolsterPistolUPP
+      - id: AU14BeltUtilityGeneralUPP
     - name: Pouches
       choices: { CMUPlatoonAirCrewPouches: 2 }
       entries:
@@ -423,7 +420,7 @@
       - id: RMCPouchDocumentSmall
       - id: RMCPouchMagazine
       - id: RMCPouchGeneralMedium
-      - id: RMCPouchPistol
+      - id: AU14PouchPistolAlt
       - id: RMCPouchMagazinePistolLarge
       - id: RMCPouchTools
     - name: Glasses
@@ -455,8 +452,8 @@
     - name: Medical Storage
       choices: { CMUPlatoonMedicalStorage: 1 }
       entries:
-      - id: CMBeltMedical
-      - id: CMBeltMedicBag
+      - id: AU14BeltMedicalUPP
+      - id: AU14BeltMedicBagUPP
     - name: General Medical Supplies
       entries:
       - id: AU14HemostaticGauzePacket
@@ -523,10 +520,14 @@
     - name: Fatigues
       entries:
       - id: AU14UPPFatigues
-        amount: 1
+        amount: 2
+      - id: AU14BoilerFatiguesUPP
+        amount: 2
+      - id: AU14ServiceFatiguesUPP
+        amount: 2
     - name: Footwear
       entries:
-      - id: RMCBootsPMCFilled
+      - id: RMCBootsSPPFilled
         amount: 2
       - id: CMBootsBrown
         amount: 2
@@ -567,6 +568,11 @@
       takeAll: CMUAREssentialEquipment
       entries:
       - id: RMCWeaponLMGQYJ72
+    - name: Belt
+      choices: { CMUPlatoonMGBelt: 1 }
+      entries:
+      - id: AU14BeltSmartGunOperatorUPP
+      - id: AU14BeltSmartGunOperatorPistolUPP
     - name: Gun Munitions
       entries:
       - id: RMCMagazineLMGQYJ72

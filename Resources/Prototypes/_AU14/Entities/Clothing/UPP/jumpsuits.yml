@@ -1,11 +1,57 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
-  id: AU14UPPFatigues
+  id: AU14FatiguesUPP
   name: UPP Naval Infantry Fatigues
   description: A standard set of Union of Progressive Peoples Fatigues. It has shards of light Kevlar to help protect against shrapnel.
   components:
   - type: Sprite
-    sprite: _AU14/Clothing/UPP/uppfatigues.rsi
+    sprite: _AU14/Clothing/UPP/jumpsuits/uppfatigues.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+    - AU14PatchUPPNavalInfantry
+
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: AU14ServiceFatiguesUPP
+  name: UPP service uniform
+  description: Standart-issue UPP Army service uniform. Usually worn by officers.
+  components:
+  - type: Sprite
+    sprite: _AU14/Clothing/UPP/jumpsuits/uppservice.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+    - AU14PatchUPPNavalInfantry
+
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: AU14BoilerFatiguesUPP
+  name: UPP boiler jumpsuit
+  description: Standart-issue UPP Army service uniform. Usually worn by pilots and aircrews.
+  components:
+  - type: Sprite
+    sprite: _AU14/Clothing/UPP/jumpsuits/uppboiler.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+    - AU14PatchUPPNavalInfantry
+
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: AU14SynthFatiguesUPP
+  name: UPP Support Synthetic Uniform
+  description: Standart-issue UPP Army service uniform designed to be worn by Synthetic Units.
+  components:
+  - type: RMCClothingFoldable
+    types:
+    - name: rmc-sleeves-verb
+      prefix: sleeves
+      priority: 1
+      blacklistedPrefix: jacket
+      blacklistPopup: rmc-sleeves-cannot
+  - type: Sprite
+    sprite: _AU14/Clothing/UPP/jumpsuits/uppciv2.rsi
   - type: UniformAccessoryHolder
     startingAccessories:
     - AU14PatchUPP
