@@ -883,16 +883,18 @@
         amount: 1
       - id: CMMagazineRifleM4SPR
         amount: 12
-    - name: MK221 tactical shotgun
+    - name: M42A2 pump shotgun
       entries:
-      - id: WeaponShotgunM890
+      - id: RMCPVECaseM42A2
         amount: 1
       - id: RMCBoxShotgunBuckshot
-        amount: 8
+        amount: 4
       - id: RMCBoxShotgunSlugs
-        amount: 6
-      - id: RMCBoxShotgunFlechette
-        amount: 6
+        amount: 4
+    - name: XM99A phased plasma pulse rifle
+      entries:
+      - id: AU14CaseXM99A
+        amount: 1
 
 - type: entity
   parent: ColMarTechBase

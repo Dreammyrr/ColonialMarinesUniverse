@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: M41A/2 assault rifle MK2
   id: RMCWeaponRifleM54C2
-  description: A modified version M41A pulse rifle MK2, re-engineered for better weight, handling and accuracy. Fires precise two-round bursts. Given only to elite units.
+  description: A modified version M41A pulse rifle MK2, re-engineered for better weight, handling and accuracy. Fires precise two-round bursts. A very rare sight, often seen in use by wealthy PMCs.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m54c2.rsi

@@ -2,7 +2,7 @@
   parent: CMBaseWeaponSMG
   name: Type-19 Submachinegun
   id: RMCWeaponSMGType19
-  description: An outdated, but reliable and powerful, submachinegun originating in the Socialist Progressive Peoples, it is still in limited service in the SPP but is most often used by paramilitary groups or corporate security forces. It is usually used with a 35 round stick magazine, or a 71 round drum.
+  description: An outdated, but reliable and powerful, submachinegun originating in the Union of Progressive Peoples, it is still in limited service in the UPP but is most often used by paramilitary groups or corporate security forces. It is usually used with a 35 round stick magazine, or a 71 round drum.
   suffix: Filled
   components:
   - type: Sprite

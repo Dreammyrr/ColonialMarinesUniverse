@@ -16,8 +16,8 @@
 - type: entity
   parent: [RMCJumpsuitTSEPA, RMCFoldableUniformBase]
   id: RMCJumpsuitMarineRoyal
-  name: royal crown marine uniform
-  description: The field uniform of the royal crown marines. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar UNMC equipment.
+  name: royal marine commando uniform
+  description: The field uniform of the royal marine commandoes. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar USCMC equipment.
   suffix: Filled, Royal
   components:
   - type: Sprite
@@ -55,8 +55,8 @@
 - type: entity
   parent: RMCJumpsuitTSEPA
   id: RMCJumpsuitMarineRoyalTeamlead
-  name: royal crown marine uniform
-  description: The field uniform of the royal crown marines. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar UNMC equipment.
+  name: royal marine commando uniform
+  description: The field uniform of the royal marine commandoes. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar USCMC equipment.
   suffix: Filled, Royal, Teamlead
   components:
   - type: Sprite

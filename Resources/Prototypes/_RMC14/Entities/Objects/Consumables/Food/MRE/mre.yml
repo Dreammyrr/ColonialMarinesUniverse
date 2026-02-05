@@ -118,7 +118,7 @@
   parent: CMMRE
   id: RMCMREWeYa # TODO RMC14 - Custom Contents
   name: PMC CFR ration
-  description: A Combat Field Ration. Uses similar to UNMC MRE format, but utilizes expensive preserving materials and methods and not less expensive foods, not much different from going to a restaurant. Eating better worlds.
+  description: A Combat Field Ration. Uses similar to USCMC MRE format, but utilizes expensive preserving materials and methods and not less expensive foods, not much different from going to a restaurant. Feeding better worlds.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/mre_weya.rsi
@@ -196,7 +196,7 @@
 - type: entity
   parent: BaseItem
   id: RMCSurvivalRationSPP
-  name: SPP survival ration
+  name: UPP survival ration
   description: A small compressed package containing a single portion of food you cannot distinguish.
   components:
   - type: RMCLoreExaminable

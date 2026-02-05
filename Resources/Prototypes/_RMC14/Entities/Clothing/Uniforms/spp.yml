@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitSPP
-  name: SPP fatigues
-  description: A set of SPP fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  name: UPP fatigues
+  description: A set of UPP fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/uniform.rsi
@@ -40,8 +40,8 @@
 - type: entity
   parent: CMJumpsuitSPP
   id: CMJumpsuitSPPMedic
-  name: SPP medic fatigues
-  description: A set of SPP medic fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  name: UPP medic fatigues
+  description: A set of UPP medic fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/medic.rsi
@@ -50,7 +50,7 @@
   parent: CMJumpsuitSPP
   id: CMJumpsuitSPPEngi
   name: SPP engineer fatigues
-  description: A set of SPP engineer fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  description: A set of UPP engineer fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/engi.rsi
@@ -58,8 +58,8 @@
 - type: entity
   parent: CMJumpsuitSPP
   id: CMJumpsuitSPPMP
-  name: SPP military police fatigues
-  description: A set of SPP military police fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  name: UPP military police fatigues
+  description: A set of UPP military police fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/mp.rsi
@@ -67,8 +67,8 @@
 - type: entity
   parent: CMJumpsuitSPP
   id: CMJumpsuitSPPOfficer
-  name: SPP officer fatigues
-  description: A set of SPP officer fatigues, mass produced for the armed-forces of the Socialist Progressive Peoples.
+  name: UPP officer fatigues
+  description: A set of UPP officer fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/officer.rsi
@@ -85,15 +85,15 @@
 - type: entity
   parent: CMJumpsuitSPP
   id: RMCJumpsuitSPPArmy
-  name: SPP army fatigues
-  description: A set of SPP fatigues, mass produced for the Armed Collective of the Socialist Progressive Peoples. A rare sight, especially in 3WE zones. This particular set sports the standard SPP pattern of the SPP Army's 202nd Infantry Regiment.
+  name: UPP army fatigues
+  description: A set of UPP fatigues, mass produced for the Armed Collective of the Union of Progressive Peoples. A rare sight, especially in 3WE zones. This particular set sports the standard UPP pattern of the UPP Army's 202nd Infantry Regiment.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/army.rsi
 
 - type: entity
   parent: RMCJumpsuitSPPArmy
-  id: RMCJumpsuitSPPArmyAlt
+  id: RMCJumpsuitUPPArmyAlt
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/army_alt.rsi
@@ -102,7 +102,7 @@
 - type: entity
   parent: RMCUniformBase
   id: CMJumpsuitSPPCiv1
-  name: SPP civilian-style orange overalls
+  name: UPP civilian-style orange overalls
   description: A set of civilian-style orange overalls with a dark tan undershirt. The material is of a poor quality, however it's better than nothing. Clothing of this style is typically given out to those who work laborious jobs.
   components:
   - type: Sprite
@@ -111,7 +111,7 @@
 - type: entity
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPCiv2
-  name: SPP civilian-style tan overalls
+  name: UPP civilian-style tan overalls
   description: A set of civilian-style tan overalls with a blue undershirt. The material is of a poor quality, however it's better than nothing. Clothing of this style is typically given to those who work laborious jobs.
   components:
   - type: Sprite
@@ -120,7 +120,7 @@
 - type: entity
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPCiv3
-  name: SPP civilian-style shirt and pants
+  name: UPP civilian-style shirt and pants
   description: A set of civilian-style tan shirt and jeans. The material, while poor, is comfortable enough to be worn during all periods of the day.
   components:
   - type: Sprite
@@ -129,7 +129,7 @@
 - type: entity
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPCiv4
-  name: SPP civilian-style vest and pants
+  name: UPP civilian-style vest and pants
   description: A set of civilian-style brown vest and orange pants. The material is surprisingly decent, something not often worn by the civilians of the SPP for two reasons. They typically can't afford such clothing, and if they can, it paints a target on their back.
   components:
   - type: Sprite
