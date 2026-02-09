@@ -43,7 +43,6 @@
     faction: opfor
     ShuttleType: Dropship
 
-
 - type: entity
   parent: CMComputerDropshipNavigation
   id: CMComputerDropshipNavigationERT
@@ -266,7 +265,6 @@
   - type: FTLSmashImmune
   - type: NoFTL
 
-
 - type: entity
   parent: MarkerBase
   id: CMDropshipDestinationThirdPartyWhitelist
@@ -282,7 +280,6 @@
     FactionControlling: thirdparty
   - type: FTLSmashImmune
   - type: NoFTL
-
 
 - type: entity
   parent: MarkerBase
@@ -311,7 +308,6 @@
     faction: govfor
     ShuttleType: Dropship
 
-
 - type: entity
   parent: CMComputerDropshipNavigation
   id: CMComputerDropshipNavigationThirdParty
@@ -321,4 +317,10 @@
     faction: govfor
     ShuttleType: Dropship
 
-
+- type: entity
+  parent: CMComputerDropshipNavigationThirdParty
+  id: CMComputerDropshipNavigationOldThirdParty
+  components:
+  - type: Sprite
+    sprite: _CMU14/Structures/Machines/shuttle_console.rsi
+    state: consoleold

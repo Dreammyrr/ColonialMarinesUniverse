@@ -1,8 +1,8 @@
 - type: entity
   parent: CMFlare
-  id: AU14RMCFlare
+  id: AU14FlareRMC
   suffix: Alt
-  description: A purple Royal Marine issued flare. There are instructions on the side, it reads 'pull cord, make light'.
+  description: An RMC issued flare that burns in both the visual and ultraviolet spectrum. There are instructions on the side, it reads 'pull cord, make light'.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/flares.rsi
@@ -11,21 +11,21 @@
         state: flare
       - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
         state: flare_flame
-        color: "#ee7aff"
+        color: "#d79be5"
         visible: false
       - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
         state: overlay
   - type: PointLight
-    color: "#ee7aff"
+    color: "#d79be5"
   - type: Tag
     tags:
-    - AU14RMCFlare
+    - AU14FlareRMC
     - RMCFlare
 
 - type: entity
   abstract: true
   parent: BaseItem
-  id: AU14RMCPackFlareBase
+  id: AU14PackFlareBaseRMC
   name: L96 marking flare pack
   suffix: Alt
   description: A packet of eight M94 Marking Flares. Carried by Marine soldiers to light dark areas that cannot be reached with the usual TNR Shoulder Lamp.
@@ -41,7 +41,7 @@
       name: Flare
       whitelist:
         tags:
-        - AU14RMCFlare
+        - AU14FlareRMC
   - type: Sprite
     sprite: _AU14/Weapons/Throwable/RMC/packets.rsi
     layers:
@@ -67,16 +67,16 @@
           Full: { visible: false }
 
 - type: entity
-  parent: AU14RMCPackFlareBase
-  id: AU14RMCPackFlare
+  parent: AU14PackFlareBaseRMC
+  id: AU14PackFlareRMC
   suffix: Filled, Alt
   components:
   - type: CMItemSlots
-    startingItem: AU14RMCFlare
+    startingItem: AU14FlareRMC
 
 - type: entity
   parent: RMCBoxMagazineSupplySmallBase
-  id: AU14RMCBoxPackFlareEmpty
+  id: AU14BoxPackFlareRMCEmpty
   name: box of L96 flare packs (x10)
   description: A box of L96 marking flare packs, to brighten up your day.
   components:
@@ -91,7 +91,7 @@
       name: FlarePack
       whitelist:
         tags:
-        - AU14RMCFlarePack
+        - AU14FlarePackRMC
   - type: Sprite
     layers:
     - state: supply_box_small
@@ -111,15 +111,15 @@
       color: "#646a3c"
 
 - type: entity
-  parent: AU14RMCBoxPackFlareEmpty
-  id: AU14RMCBoxPackFlare
+  parent: AU14BoxPackFlareRMCEmpty
+  id: AU14BoxPackFlareRMC
   suffix: Filled, Alt
   components:
   - type: CMItemSlots
-    startingItem: AU14RMCPackFlare
+    startingItem: AU14PackFlareRMC
 
 - type: Tag
-  id: AU14RMCFlare
+  id: AU14FlareRMC
 
 - type: Tag
-  id: AU14RMCFlarePack
+  id: AU14FlarePackRMC

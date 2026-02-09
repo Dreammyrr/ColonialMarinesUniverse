@@ -27,6 +27,17 @@
     - id: CMHandsLatex
 
 - type: entity
+  parent: CMUBeltMedicBagSupportSynth
+  id: CMUBeltMedicBagSupportSynthRMC
+  components:
+  - type: Sprite
+    sprite: _AU14/Clothing/RMC/belt/medicbag.rsi
+  - type: Clothing
+    sprite: _AU14/Clothing/RMC/belt/medicbag.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
+
+- type: entity
   parent: CMBeltUtility
   id: AU14BeltUtilityFilled
   suffix: Filled

@@ -308,43 +308,11 @@
       sprite: _RMC14/Interface/cm_job_icons.rsi
       state: clf_sl
 
-- type: entity
-  parent: SquadBase
-  id: SquadGovfor
-  name: Alpha
-  components:
-  - type: SquadTeam
-    color: "#E61D02"
-    radio: MarineAlpha
-    group: GOVFOR
-    minimapBackground:
-      sprite: _RMC14/Interface/map_blips.rsi
-      state: background_alpha
-    leaderIcon:
-      sprite: _RMC14/Interface/cm_job_icons.rsi
-      state: hudsquad_leader_a
-
-- type: entity
-  parent: SquadBase
-  id: SquadOpfor
-  name: Alpha
-  components:
-  - type: SquadTeam
-    color: "#E61D02"
-    radio: opfor
-    group: OPFOR
-    minimapBackground:
-      sprite: _RMC14/Interface/map_blips.rsi
-      state: background_bravo
-    leaderIcon:
-      sprite: _RMC14/Interface/cm_job_icons.rsi
-      state: hudsquad_leader_a
-
 # --- OPFOR Squads ---
 - type: entity
   parent: SquadBase
   id: SquadOpforIntel
-  name: Opfor Intel
+  name: Auxiliary
   components:
   - type: SquadTeam
     roundStart: true
@@ -360,12 +328,28 @@
 
 - type: entity
   parent: SquadBase
+  id: SquadOpfor
+  name: Sierra
+  components:
+  - type: SquadTeam
+    color: "#7B6CA5"
+    radio: opfor
+    group: OPFOR
+    minimapBackground:
+      sprite: _RMC14/Interface/map_blips.rsi
+      state: background_bravo
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: hudsquad_leader_a
+
+- type: entity
+  parent: SquadBase
   id: SquadOpforBravo
-  name: Bravo
+  name: Tango
   components:
   - type: SquadTeam
     roundStart: true
-    color: "#E6E202"
+    color: "#B9A76D"
     group: OPFOR
 
     radio: OpforBravo
@@ -379,11 +363,11 @@
 - type: entity
   parent: SquadBase
   id: SquadOpforCharlie
-  name:  Charlie
+  name:  Uniform
   components:
   - type: SquadTeam
     roundStart: true
-    color: "#41004A"
+    color: "#7A967E"
     radio: OpforCharlie
     group: OPFOR
 
@@ -413,12 +397,28 @@
 
 - type: entity
   parent: SquadBase
+  id: SquadGovfor
+  name: Sierra
+  components:
+  - type: SquadTeam
+    color: "#7B6CA5"
+    radio: MarineAlpha
+    group: GOVFOR
+    minimapBackground:
+      sprite: _RMC14/Interface/map_blips.rsi
+      state: background_alpha
+    leaderIcon:
+      sprite: _RMC14/Interface/cm_job_icons.rsi
+      state: hudsquad_leader_a
+
+- type: entity
+  parent: SquadBase
   id: SquadGovforBravo
-  name: Bravo
+  name: Tango
   components:
   - type: SquadTeam
     roundStart: true
-    color: "#E6E202"
+    color: "#B9A76D"
     group: GOVFOR
     radio: GovforBravo
     accessLevels:
@@ -431,13 +431,13 @@
 - type: entity
   parent: SquadBase
   id: SquadGovforCharlie
-  name: Charlie
+  name: Uniform
   components:
   - type: SquadTeam
     roundStart: true
     group: GOVFOR
 
-    color: "#ADFF2F"
+    color: "#7A967E"
     radio: GovforCharlie
     accessLevels:
     - AU14AccessGovforSquad

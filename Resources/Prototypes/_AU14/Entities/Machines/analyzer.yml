@@ -1,0 +1,46 @@
+- type: entity
+  parent: BaseMachinePowered
+  id: AU14AnalyzerMachine
+  name: Analyzer Machine
+  description: A generic Analyzer Machine.
+  components:
+  - type: Transform
+    anchored: false
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -9
+    range: 3
+    enabled: false
+    sound:
+      path: /Audio/Ambience/Objects/vending_machine_hum.ogg
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.95,-0.45,0.90,0.45"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+        density: 200
+  - type: Electrified
+    enabled: false
+    usesApcPower: true
+  - type: PointLight
+    enabled: false
+    castShadows: false
+    radius: 1.5
+    color: "#39a1ff"
+  - type: LitOnPowered
+  - type: ApcPowerReceiver
+    needsPower: false # TODO RMC14
+    powerLoad: 0
+  - type: Appearance
+  - type: Sprite
+    sprite: _AU14/Structures/analyzermachine.rsi
+    state: analyzer_idle
+# EG, when you get around to using this make sure you add the analyzer_off and analyzer_working sprites. Nzzy worked extremely hard on those states.

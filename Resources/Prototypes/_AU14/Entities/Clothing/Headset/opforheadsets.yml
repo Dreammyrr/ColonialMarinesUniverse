@@ -50,8 +50,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: AU14HeadsetSectionLeaderopfor
-  name: opfor command radio headset
-  description: This is used by opfor command members to communicate on the radio.
+  name: OPFOR command radio headset
+  description: This is used by OPFOR command members to communicate on the radio.
   components:
   - type: GrantSquadLeaderTracker
     defaultMode: CommandingOfficer
@@ -73,8 +73,8 @@
 - type: entity
   parent: CMEncryptionKey
   id: AU14EncryptionKeyopforjtac
-  name: opfor JTAC encryption key
-  description: An encryption key used to communicate on JTAC  channels.
+  name: OPFOR ATC encryption key
+  description: An encryption key used to communicate on OPFOR ATC channels.
   components:
   - type: GrantSquadLeaderTracker
     defaultMode: CommandingOfficer
@@ -91,8 +91,8 @@
 - type: entity
   parent: CMEncryptionKey
   id: AU14EncryptionKeyopforBravo
-  name: opfor Bravo encryption key
-  description: An encryption key used to communicate on the opfor Bravo channel.
+  name: OPFOR Bravo encryption key
+  description: An encryption key used to communicate on the OPFOR Bravo channel.
   components:
   - type: EncryptionKey
     channels:
@@ -104,8 +104,8 @@
 - type: entity
   parent: CMEncryptionKey
   id: AU14EncryptionKeyopforCharlie
-  name: opfor Charlie encryption key
-  description: An encryption key used to communicate on the opfor Charlie channel.
+  name: OPFOR Charlie encryption key
+  description: An encryption key used to communicate on the OPFOR Charlie channel.
   components:
   - type: EncryptionKey
     channels:
@@ -118,8 +118,8 @@
 - type: entity
   parent: CMEncryptionKey
   id: AU14EncryptionKeyopforIntel
-  name: opfor Intel encryption key
-  description: An encryption key used to communicate on the opfor Intel channel.
+  name: OPFOR Intel encryption key
+  description: An encryption key used to communicate on the OPFOR Intel channel.
   components:
   - type: EncryptionKey
     channels:

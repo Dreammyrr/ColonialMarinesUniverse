@@ -88,7 +88,7 @@
   name: chat-radio-marine-alpha
   keycode: "a" #a in cm13
   frequency: 1491
-  color: "#dc0a0a"
+  color: "#7B6CA5"
   longRange: true
   tower: true
 
@@ -97,7 +97,7 @@
   name: chat-radio-marine-bravo
   keycode: "b" #b in cm13
   frequency: 1492
-  color: "#f2af03"
+  color: "#B9A76D"
   longRange: true
   tower: true
 
@@ -106,14 +106,14 @@
   name: chat-radio-marine-charlie
   keycode: "c" #c in cm13
   frequency: 1493
-  color: "#a94ac2"
+  color: "#7A967E"
   longRange: true
   tower: true
 
 - type: radioChannel
   id: MarineDelta
   name: chat-radio-marine-delta
-  keycode: "d" #d in cm13
+  keycode: "9" #d in cm13
   frequency: 1494
   color: "#038ae1"
   longRange: true
@@ -122,7 +122,7 @@
 - type: radioChannel
   id: MarineEcho
   name: chat-radio-marine-echo
-  keycode: "e" #e in cm13
+  keycode: "6" #e in cm13
   frequency: 1495
   color: "#3be1b1"
   longRange: true
@@ -131,7 +131,7 @@
 - type: radioChannel
   id: MarineFoxtrot
   name: chat-radio-marine-foxtrot
-  keycode: "f" #f in cm13
+  keycode: "0" #f in cm13
   frequency: 1496
   color: "#c23c07"
   longRange: true

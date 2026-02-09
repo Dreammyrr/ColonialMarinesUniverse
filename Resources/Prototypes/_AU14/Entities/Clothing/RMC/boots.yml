@@ -1,6 +1,0 @@
-- type: entity
-  parent: RMCBootsRoyal
-  id: AU14RMCBootsRoyal
-  name: L10 pattern combat boots
-  description: Standard issue combat boots for combat scenarios or combat situations. Used by the Three World Empire's Royal Marines Commandos.
-  suffix: AU14

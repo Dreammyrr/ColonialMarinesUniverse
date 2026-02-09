@@ -224,18 +224,6 @@
       entries:
       - id: RMCAttachmentRailFlashlight
       - id: RMCAttachmentTwoPointSling
-    - name: Explosives
-      entries:
-      - id: RMCBoxHEDP
-        amount: 1
-      - id: RMCBoxHEFA
-        amount: 1
-      - id: CMGrenadeSmoke
-        amount: 6
-      - id: RMCExplosivePlastic
-        amount: 2
-      - id: RMCExplosiveBreachingCharge
-        amount: 2
 
 - type: entity
   parent: ColMarTechBase
@@ -272,6 +260,18 @@
     - name: M5A1 Special Light Anti-Tank Weapon
       entries:
       - id: RMCWeaponLauncherDisposableFolded
+        amount: 2
+    - name: Explosives
+      entries:
+      - id: RMCBoxHEDP
+        amount: 1
+      - id: RMCBoxHEFA
+        amount: 1
+      - id: CMGrenadeSmoke
+        amount: 6
+      - id: RMCExplosivePlastic
+        amount: 2
+      - id: RMCExplosiveBreachingCharge
         amount: 2
 
 - type: entity

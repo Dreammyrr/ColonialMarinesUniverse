@@ -1,7 +1,7 @@
 - type: entity
   parent: CMBaseMask
-  id: AU14RMCMaskGas
-  name: royal marine gasmask
+  id: AU14MaskGasRMC
+  name: L7 pattern gasmask
   description: The standard issue gasmask utilized by the TWE Royal Marines Commandos and IASF.
   components:
   - type: Sprite

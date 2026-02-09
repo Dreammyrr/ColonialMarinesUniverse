@@ -47,13 +47,13 @@
     - name: Explosives
       entries:
       - cost: 3000
-        crate: AU14RMCCrateGrenadesHighExplosive
+        crate: AU14CrateGrenadesHighExplosiveRMC
       - cost: 4000
-        crate: AU14RMCCrateGrenadesIncendiary
+        crate: AU14CrateGrenadesIncendiaryRMC
       - cost: 3000
         crate: RMCCrateGrenadesFrag # TODO proper RMC HEFA
       - cost: 1000
-        crate: AU14RMCCrateGrenadesSmoke
+        crate: AU14CrateGrenadesSmokeRMC
       - cost: 4000
         crate: RMCCrateGrenadesFragOld
       - cost: 3000
@@ -61,29 +61,29 @@
       - cost: 4000
         crate: RMCCrateBreachingCharges
       - cost: 10000
-        crate: AU14RMCCrateGrenadesHighExplosiveBox
+        crate: AU14CrateGrenadesHighExplosiveBoxRMC
       - cost: 10000
-        crate: RMCCrateGrenadesBoxHEFA # TODO proper RMC HEFA
+        crate: AU14CrateGrenadesIncendiaryBoxRMC
       - cost: 10000
-        crate: RMCCrateGrenadesAirburstFragBox
+        crate: AU14Crate20MMGrenadesHESHDoubleRMC
+      - cost: 10000
+        crate: AU14Crate20MMGrenadesFragDoubleRMC
       - cost: 10000
         crate: RMCCrateBoxAGMI
       - cost: 4000
-        crate: RMCCrateGrenadesAirburstFrag
+        crate: AU14Crate20MMGrenadesFragRMC
       - cost: 4000
-        crate: RMCCrateGrenadesAirburstIncendiary
-      - cost: 1200
-        crate: RMCCrateGrenadesAirburstSmoke
+        crate: AU14Crate20MMGrenadesIncendiaryRMC
+      - cost: 6000
+        crate: AU14Crate20MMGrenadesHERMC
       - cost: 4000
-        crate: RMCCrateGrenadesAirburstHornet
+        crate: AU14Crate20MMGrenadesHoloRMC
       - cost: 4000
         crate: RMCCrateGrenadesAirburstStarShell
-      - cost: 1000
-        crate: RMCCrateGrenadesBatonSlug
     - name: Food
       entries:
       - cost: 500
-        crate: AU14RMCCrateFoodMRE
+        crate: AU14CrateFoodMRERMC
       - cost: 500
         crate: RMCCrateFoodIngredients
     - name: Gear
@@ -93,7 +93,7 @@
       - cost: 4000
         crate: AU14CrateTacticalMonocularDesignator
       - cost: 1500
-        crate: AU14RMCCrateGearPackFlare
+        crate: AU14CrateGearPackFlareRMC
       - cost: 4000
         crate: AU14CrateMotionDetectors
       - cost: 3000
@@ -123,13 +123,13 @@
     - name: Mortar
       entries:
       - cost: 6000
-        crate: RMCCrateMortarKit
+        crate: AU14CrateMortarKitRMC
       - cost: 500
-        crate: RMCCrateMortarShellFlare
+        crate: AU14CrateMortarShellFlareRMC
       - cost: 1000
-        crate: RMCCrateMortarShellHE
+        crate: AU14CrateMortarShellHERMC
       - cost: 1500
-        crate: RMCCrateMortarShellIncendiary
+        crate: AU14CrateMortarShellIncendiaryRMC
 #    - name: Operations
 #      entries: []
     - name: Supplies
@@ -147,7 +147,7 @@
     - name: Weapons
       entries:
       - cost: 3000
-        crate: RMCCrateMK80
+        crate: AU14CrateL165A1
       - cost: 4000
         crate: RMCCrateXM88
       - cost: 3000
@@ -163,7 +163,7 @@
     - name: Ammo
       entries:
       - cost: 2500
-        crate: RMCCrateBoxMagazinePistolMK80
+        crate: AU14CrateBoxMagazinePistolL165A1
       - cost: 4000
         crate: RMCCrateBoxAmmo458
       - cost: 4000
@@ -184,6 +184,8 @@
         crate: AU14CrateM7SLAWMixedRocket
       - cost: 2000
         crate: AU14CrateM7SLAWHERocket
+      - cost: 3000
+        crate: AU14CrateMagazineL64A3
     - name: Dropship Parts
       entries:
       - cost: 100

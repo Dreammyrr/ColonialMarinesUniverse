@@ -1,0 +1,9 @@
+- type: entity
+  parent: RMCCrateAmmo
+  id: AU14CrateMagazineL64A3
+  name: L64A3 DMR Squash-Head Magazine Crate (x5)
+  components:
+  - type: StorageFill
+    contents:
+    - id: AU14MagazineSniperL64A3
+      amount: 5

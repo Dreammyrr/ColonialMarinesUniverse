@@ -79,6 +79,9 @@
   - type: GunPointBlank
   - type: GunDualWielding
     weaponGroup: Rifle
+  - type: GunUnskilledPenalty
+  - type: GunIFF
+    enabled: false
 
 
 - type: hitscan

@@ -1,6 +1,6 @@
 - type: entity
   parent: CMMRE
-  id: AU14RMCMRETWE # TODO custom contents
+  id: AU14MRETWERMC # TODO custom contents
   name: TWE ORP ration
   description: An Operation Ration Pack. Uses similar to UNCM MRE format, but utilizes expensive preserving materials and methods and not less expensive meals from TWE cuisine.
   components:

@@ -1,6 +1,6 @@
 - type: entity
   parent: AU14WebbingDropPouch
-  id: AU14RMCWebbingDropPouch
+  id: AU14WebbingDropPouchRMC
   name: royal marine drop pouch
   description: A convenient pouch to carry loose items around.
   components:
@@ -31,7 +31,7 @@
 
 - type: entity
   parent: AU14WebbingAdminPouch
-  id: AU14RMCWebbingAdminPouch
+  id: AU14WebbingAdminPouchRMC
   name: royal marine admin pouch
   description: A pouch to carry your administrative equipment around.
   components:

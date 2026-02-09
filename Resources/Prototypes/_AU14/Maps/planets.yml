@@ -36,6 +36,7 @@
     - NSPAInvestigationParty
     - NSPAInvestigationPartyAlt
     - LACNSniperteam
+    - RMCRRT
     - cultistThirdParty
     - CMBInvestigationParty
     - CMBInvestigationPartyAlt
@@ -72,6 +73,7 @@
     - NSPAInvestigationParty
     - NSPAInvestigationPartyAlt
     - LACNSniperteam
+    - RMCRRT
     - cultistThirdParty
     - CMBInvestigationParty
     - CMBInvestigationPartyAlt
@@ -115,6 +117,7 @@
     - NSPAInvestigationParty
     - NSPAInvestigationPartyAlt
     - LACNSniperteam
+    - RMCRRT
     - cultistThirdParty
     - CMBInvestigationParty
     - CMBInvestigationPartyAlt
@@ -151,6 +154,7 @@
     - NSPAInvestigationParty
     - NSPAInvestigationPartyAlt
     - LACNSniperteam
+    - RMCRRT
     - cultistThirdParty
     - CMBInvestigationParty
     - CMBInvestigationPartyAlt
@@ -248,3 +252,4 @@
     - NSPAInvestigationParty
     - NSPAInvestigationPartyAlt
     - LACNSniperteam
+    - RMCRRT

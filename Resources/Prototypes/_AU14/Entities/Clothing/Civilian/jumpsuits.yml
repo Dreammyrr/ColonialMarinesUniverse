@@ -67,6 +67,15 @@
     startingWebbing: CMWebbingSurgicalBlue
 
 - type: entity
+  parent: AU14CivilianBoilerSuitDarkBlueSynth
+  id: AU14CivilianBoilerSuitDarkBlueSynthRMC
+  components:
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14RMCPatch
+    - AU14TWEPatch
+
+- type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: AU14CivilianBoilerSuitGray
   name: Gray Boilersuit

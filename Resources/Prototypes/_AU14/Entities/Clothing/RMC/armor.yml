@@ -1,6 +1,6 @@
 - type: entity
   parent: AU14BaseArmor
-  id: AU14RMCArmor
+  id: AU14ArmorRMC
   name: kestrel armoured vest
   suffix: AU14
   description: A customizable personal armor system used by the Royal Crown Marines.
@@ -10,7 +10,7 @@
 
 - type: entity
   parent: AU14BaseArmorLight
-  id: AU14RMCArmorLight
+  id: AU14ArmorLightRMC
   name: kestrel light armoured vest
   suffix: AU14
   description: A customizable personal armor system used by the Royal Crown Marines.
@@ -20,7 +20,7 @@
 
 - type: entity
   parent: AU14BaseArmor
-  id: AU14RMCArmorPadded
+  id: AU14ArmorPaddedRMC
   name: kestrel armoured carry vest
   suffix: AU14
   description: A customizable personal armor system used by the Royal Crown Marines.
@@ -30,7 +30,7 @@
 
 - type: entity
   parent: [ RMCAllowSuitStorageClothingSmartgunner, AU14BaseArmor ]
-  id: AU14RMCArmorSmartGunDesertCombatHarness
+  id: AU14ArmorSmartGunDesertCombatHarnessRMC
   name: kestrel armoured smart gun harness
   suffix: AU14
   description: Kestel smart gun harness specially made for Smartgunners.
@@ -51,7 +51,7 @@
 
 - type: entity
   parent: AU14BaseArmor
-  id: AU14RMCArmorRoyalPointman
+  id: AU14ArmorPointmanRMC
   name: kestrel pointman armour
   suffix: AU14
   components:
@@ -70,7 +70,7 @@
 
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
-  id: AU14RMCICPS2
+  id: AU14ICPS2RMC
   name: royal marine ICPS-2 Aircrew Armor
   suffix: RM
   description: A set of ballistic armor used by RMC aircrew.

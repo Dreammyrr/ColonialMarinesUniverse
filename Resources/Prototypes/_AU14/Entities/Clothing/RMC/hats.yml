@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingHeadBase
-  id: AU14RMCHeadTurban
+  id: AU14HeadTurbanRMC
   name: royal marine turban
   description: A standard military turban found in the Three World Empire Royal Marines Commando. Considered a rare item, these kind of turbans are prized by collectors.
   components:
@@ -11,7 +11,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: AU14RMCHeadBeret
+  id: AU14HeadBeretRMC
   name: royal marine beret
   suffix: AU14
   description: A green beret belonging to the Three World Empire Royal Marines Commando.
@@ -23,7 +23,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: AU14RMCHeadBeretLead
+  id: AU14HeadBeretRMCLead
   name: royal marine sergeant beret
   suffix: AU14
   description: A green beret belonging to the Three World Empire Royal Marines Commando.
@@ -35,7 +35,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: AU14RMCHeadBeretOfficer
+  id: AU14HeadBeretRMCOfficer
   name: royal marine officer beret
   suffix: AU14
   description: A green beret belonging to the Three World Empire Royal Marines Commando.
@@ -47,7 +47,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: AU14RMCHeadCapOfficer
+  id: AU14HeadCapOfficerRMC
   name: royal marine officer peaked cap
   suffix: AU14
   description: Gray peaked cap belonging to the Three World Empire Royal Marines Commando officer. Shown to show your men who's the boss.

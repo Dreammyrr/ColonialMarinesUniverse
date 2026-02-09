@@ -1145,12 +1145,12 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentL24Stock
-  name: L24 solid stock
-  description: Intergrated into the L24. You shouldn't have this.
+  name: L23 solid stock
+  description: Intergrated into the L23. You shouldn't have this.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_stock.rsi
-    state: L24
+    sprite: _AU14/Weapons/Guns/Attachments/royal_stock.rsi
+    state: rmc_nsg_stock
   - type: AttachableVisuals
     suffix: ""
   - type: Tag

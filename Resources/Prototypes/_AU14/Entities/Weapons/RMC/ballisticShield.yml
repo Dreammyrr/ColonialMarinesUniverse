@@ -1,9 +1,9 @@
 - type: entity
-  name: royal marine ballistic shield
+  name: FBS-B ballistic shield
   parent: [ BaseShield, BaseSecurityContraband ]
-  id: AU14RMCBallisticShield
+  id: AU14BallisticShieldRMC
   suffix: RM
-  description: A large tower shield. Good for close combat environments.
+  description: Ballistic shield used by the royal marines commando. This shield is commonly used during boarding actions due to its lightweight but durable design. Does not help against explosives.
   components:
     - type: ItemToggle
     - type: ComponentToggler

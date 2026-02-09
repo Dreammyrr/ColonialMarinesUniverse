@@ -149,16 +149,16 @@
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
   - type: StorageFill
     contents:
-    - id: AU14RMCHeadTurban
-    - id: AU14RMCHeadBeret
+    - id: AU14HeadTurbanRMC
+    - id: AU14HeadBeretRMC
     - id: RMCHeadRoyalBeanie
-    - id: AU14RMCHands
-    - id: AU14RMCFatiguesDesert
-    - id: AU14RMCFatiguesBlack
-    - id: AU14RMCBootsRoyal
-    - id: AU14TantoA
-    - id: AU14WeaponRifleF9030A1
-    - id: AU14WeaponPistolL54
+    - id: AU14HandsRMC
+    - id: AU14FatiguesDesertRMC
+    - id: AU14FatiguesBlackRMC
+    - id: RMCBootsRoyal
+    - id: RMCTantoA
+    - id: AU14WeaponRifleL90
+    - id: RMCWeaponPistolL54Empty
     - id: AU14RMCPatch
     - id: AU14TWEPatch
   
@@ -234,13 +234,13 @@
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
   - type: StorageFill
     contents:
-    - id: AU14RMCHeadHelmetAircrew
-    - id: AU14RMCHeadHelmetAircrew
-    - id: AU14RMCHands
-    - id: AU14RMCPilotJumpsuit
-    - id: AU14RMCBootsRoyal
-    - id: AU14TantoA
-    - id: AU14WeaponPistolL54
+    - id: AU14HeadHelmetRMCAircrew
+    - id: AU14HeadHelmetRMCAircrew
+    - id: AU14HandsRMC
+    - id: AU14PilotJumpsuitRMC
+    - id: RMCBootsRoyal
+    - id: RMCTantoA
+    - id: RMCWeaponPistolL54Empty
     - id: AU14RMCPatch
     - id: AU14TWEPatch
 
@@ -263,16 +263,16 @@
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
   - type: StorageFill
     contents:
-    - id: AU14RMCHeadTurban
-    - id: AU14RMCHeadBeretOfficer
-    - id: AU14RMCHeadCapOfficer
+    - id: AU14HeadTurbanRMC
+    - id: AU14HeadBeretRMCOfficer
+    - id: AU14HeadCapOfficerRMC
     - id: RMCHeadRoyalBeanie
-    - id: AU14RMCHands
-    - id: AU14RMCFatiguesService
-    - id: AU14RMCFatiguesBlackTeamlead
-    - id: AU14RMCFatiguesDesertTeamlead
-    - id: AU14RMCBootsRoyal
-    - id: AU14TantoA
-    - id: AU14WeaponPistolL54
+    - id: AU14HandsRMC
+    - id: AU14FatiguesServiceRMC
+    - id: AU14FatiguesBlackRMCTeamlead
+    - id: AU14FatiguesDesertRMCTeamlead
+    - id: RMCBootsRoyal
+    - id: RMCTantoA
+    - id: RMCWeaponPistolL54Empty
     - id: AU14RMCPatch
     - id: AU14TWEPatch

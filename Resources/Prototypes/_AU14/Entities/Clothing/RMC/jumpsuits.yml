@@ -1,6 +1,6 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
-  id: AU14RMCFatiguesDesert
+  id: AU14FatiguesDesertRMC
   name: desert royal marine fatigues
   description: Standart-issue Three World Empire Royal Marines Commando fatigues.
   components:
@@ -12,8 +12,8 @@
     - AU14TWEPatch
 
 - type: entity
-  parent: AU14RMCFatiguesDesert
-  id: AU14RMCFatiguesBlack
+  parent: AU14FatiguesDesertRMC
+  id: AU14FatiguesBlackRMC
   name: black royal marine fatigues
   components:
   - type: Sprite
@@ -21,7 +21,7 @@
 
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
-  id: AU14RMCFatiguesDesertTeamlead
+  id: AU14FatiguesDesertRMCTeamlead
   name: desert royal marine team leader fatigues
   description: Standart-issue Three World Empire Royal Marines Commando fatigues. Usually worn by sergeants or officers.
   components:
@@ -33,8 +33,8 @@
     - AU14TWEPatch
 
 - type: entity
-  parent: AU14RMCFatiguesDesertTeamlead
-  id: AU14RMCFatiguesBlackTeamlead
+  parent: AU14FatiguesDesertRMCTeamlead
+  id: AU14FatiguesBlackRMCTeamlead
   name: black royal marine team leader fatigues
   components:
   - type: Sprite
@@ -42,7 +42,7 @@
 
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
-  id: AU14RMCFatiguesService
+  id: AU14FatiguesServiceRMC
   name: royal marine service uniform
   description: Standart-issue Three World Empire Royal Marines Commando service uniform. Usually worn by officers.
   components:
@@ -55,7 +55,7 @@
 
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
-  id: AU14RMCPilotJumpsuit
+  id: AU14PilotJumpsuitRMC
   name: royal marine aircrew jumpsuit
   description: A standard RMC Aircrew Jumpsuit. It has shards of light Kevlar to help protect against shrapnel.
   components:

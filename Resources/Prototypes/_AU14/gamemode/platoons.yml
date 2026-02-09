@@ -21,6 +21,7 @@
   #platoonflag: uaflag
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
 
 - type: platoon
   id: LACNcommando
@@ -65,8 +66,8 @@
   #platoonflag:  uaflag
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
   compatibleFighters:
-    - /Maps/_AU14/ShuttlesDropships/f84owl.yml
     - /Maps/_AU14/ShuttlesDropships/ud_6.yml
   possibleships:
       - Daybreak
@@ -105,6 +106,7 @@
 #    DCC: AU14JobGOVFORDCCUPP
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
 
 
 
@@ -139,6 +141,7 @@
 #    DCC: AU14JobGOVFORDCCWYPMC
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
   possibleships:
       - Daybreak
 
@@ -181,6 +184,7 @@
       - USSBush
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
   compatibleFighters:
     - /Maps/_AU14/ShuttlesDropships/cmbsquadcar.yml
 
@@ -255,6 +259,7 @@
   #platoonflag:  uaflag
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
   compatibleFighters:
     - /Maps/_AU14/ShuttlesDropships/f84owl.yml
     - /Maps/_AU14/ShuttlesDropships/ud_6.yml
@@ -284,6 +289,7 @@
   #platoonflag:  uaflag
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
   compatibleFighters:
     - /Maps/_AU14/ShuttlesDropships/f84owl.yml
     - /Maps/_AU14/ShuttlesDropships/ud_6.yml
@@ -319,6 +325,7 @@
 #    DCC: AU14JobGOVFORDCC
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
   possibleships:
       - Daybreak
       - USSBush
@@ -347,6 +354,7 @@
     Deco1: VMarkerOpforDeco5
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
   compatibleFighters:
     - /Maps/_AU14/ShuttlesDropships/f84owl.yml
     - /Maps/_AU14/ShuttlesDropships/ud_6.yml
@@ -369,7 +377,7 @@
     Rto: AU14RMCRTOVendor # TODO: RMC RTO's
     SectionSergeant: AU14RMCsectionleaderequipmentvendor
     Pilot: AU14RMCAircrewWeaponsVendor
-    combattech: AU14ComtechGearVendor
+    combattech: AU14RMCComtechGearVendor
     ExtraVendor1: VMarkerOpforDeco5
     Deco1: VMarkerOpforDeco5
   jobClassOverride:
@@ -383,8 +391,10 @@
     RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorRMC
     PlatOp: AU14JobGOVFORPlatOpRMC
     DCC: AU14JobGOVFORDCCRMC
+    SupportSynth: AU14JobGOVFORAuxSupportSynthRMC
   CompatibleDropships:
-  - /Maps/_CMU14/Shuttles/alamo.yml #TODO: RMC Shuttles
+  - /Maps/_CMU14/Shuttles/alamo.yml
+  - /Maps/_CMU14/Shuttles/normandy.yml
   compatibleFighters: #TODO: RMC Fighters
     - /Maps/_AU14/ShuttlesDropships/f84owl.yml
     - /Maps/_AU14/ShuttlesDropships/ud_6.yml

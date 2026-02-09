@@ -271,22 +271,6 @@
       - id: RMCAttachmentRailFlashlight
       - id: RMCAttachmentTwoPointSling
       - id: RMCAttachmentM203GrenadeLauncher
-    - name: Explosives
-      entries:
-      - id: RMCBoxHEDP
-        amount: 2
-      - id: CMGrenadeSmoke
-        amount: 6
-      - id: RMCPacketGrenadeM74AGMFFilled
-        amount: 4
-      - id: RMCPacketGrenadeM74AGMSHornetFilled
-        amount: 2
-      - id: RMCPacketGrenadeM74AGMSFilled
-        amount: 2
-      - id: RMCExplosivePlastic
-        amount: 2
-      - id: RMCExplosiveBreachingCharge
-        amount: 2
 
 - type: entity
   parent: ColMarTechBase
@@ -323,6 +307,18 @@
         amount: 12
       - id: RMCBoxShotgunSlugs
         amount: 12
+    - name: Explosives
+      entries:
+      - id: RMCBoxHEDP
+        amount: 2
+      - id: CMPacketGrenadeFragOldFilled
+        amount: 4
+      - id: RMCPacketGrenadeSmokeFilled
+        amount: 4
+      - id: RMCExplosivePlastic
+        amount: 4
+      - id: RMCExplosiveBreachingCharge
+        amount: 6
 
 - type: entity
   parent: ColMarTechBase
