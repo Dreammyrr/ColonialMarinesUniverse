@@ -46,6 +46,8 @@
         amount: 25
       - id: AU14UPPBoonie
         amount: 25
+      - id: CMHeadCapSPPBeret
+        amount: 25
       - id: AU14UPPUshanka
         amount: 25
     - name: Heads Up Display
@@ -61,6 +63,22 @@
       - id: AU14UPPArmorMinimalistic
         amount: 25
       - id: AU14UPPArmorBulky
+        amount: 25
+    - name: Armor Components
+      entries:
+      - id: AU14ArmorGarbShinGuardsUPP
+        amount: 25
+      - id: AAU14ArmorGarbShoulderPadsUPPC
+        amount: 25
+      - id: AU14ArmorGarbCrotchPadUPP
+        amount: 25
+      - id: AU14ArmorGarbMagazineWebbingUPP
+        amount: 2
+      - id: AU14ArmorGarbLargeWebbingUPP
+        amount: 2
+      - id: U14ArmorGarbSmallWebbingUP
+        amount: 2
+      - id: AU14ArmorGarbJunglePonchoUPP
         amount: 25
     - name: Backpack
       entries:
@@ -405,6 +423,7 @@
       - id: AU14UPPPatrolCap
       - id: AU14UPPBoonie
       - id: AU14UPPUshanka
+      - id: CMHeadCapSPPBeret
     - name: Webbings
       choices: { CMUPlatoonAirCrewWebbings: 1 }
       entries:
@@ -536,6 +555,14 @@
       - id: AU14JumpsuitMPUPP
         amount: 2
       - id: AU14ServiceFatiguesUPP
+        amount: 2
+    - name: Coats
+      entries:
+      - id: AU14CoatUPP
+        amount: 2
+      - id: AU14CoatUPPSenior
+        amount: 1
+      - id: AU14CoatUPPMP
         amount: 2
     - name: Footwear
       entries:
@@ -676,36 +703,34 @@
     sprite: _AU14/Structures/Vendors/genericweaponrack.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Type 23 Riot Shotgun
+    - name: Type 23 Riot Shotgun Pointman kit
       entries:
-      - id: RMCPVECaseType23
+      - id: AU14KitUPPPointmanType23
         amount: 1
-      - id: RMCBoxShotgunHeavyBuckshot
-        amount: 2
-      - id: RMCBoxShotgunHeavyFlechette
-        amount: 2
-      - id: RMCBoxShotgunHeavySlugs
-        amount: 2
-    - name: HJRA-12 Anti-Tank RPG
+        giveSquadRoleName: au14-job-name-govforspecialist-pointmanUPP
+        givePrefix: au14-job-prefix-govforspecialist-pointmanUPP
+        isAppendPrefix: true
+        isAppendSquadRoleName: true
+    - name: Heavy Antitank HJRA-12 Rifleman kit
       entries:
-      - id: RMCWeaponLauncherHJRA12
+      - id: AU14KitUPPHATHJRA12
         amount: 1
-      - id: RMCRocketHJRA12AT
-        amount: 2
-      - id: RMCRocketHJRA12HE
-        amount: 1
-      - id: RMCRocketHJRA12Incen
-        amount: 1
+        giveSquadRoleName: au14-job-name-govforspecialist-heavyantitankUPP
+        givePrefix: au14-job-prefix-govforspecialist-heavyantitankUPP
+        isAppendPrefix: true
+        isAppendSquadRoleName: true
     - name: Type 71-F Assault Rifle
       entries:
       - id: RMCWeaponRifleType71Flamer
         amount: 1
-    - name: Type 88 DMR
+    - name: Type 88 Marksman kit
       entries:
-      - id: RMCPVECaseType88
+      - id: AU14KitUPPMarksmanType88
         amount: 1
-      - id: RMCMagazineSniperType88
-        amount: 8
+        giveSquadRoleName: au14-job-name-govforspecialist-marksmanUPP
+        givePrefix: au14-job-prefix-govforspecialist-marksmanUPP
+        isAppendPrefix: true
+        isAppendSquadRoleName: true
     - name: Explosives
       entries:
       - id: CMPacketGrenadeFragOldFilled
