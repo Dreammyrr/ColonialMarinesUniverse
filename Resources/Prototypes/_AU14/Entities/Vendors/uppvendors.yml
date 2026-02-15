@@ -68,7 +68,7 @@
       entries:
       - id: AU14ArmorGarbShinGuardsUPP
         amount: 25
-      - id: AAU14ArmorGarbShoulderPadsUPPC
+      - id: AU14ArmorGarbShoulderPadsUPP
         amount: 25
       - id: AU14ArmorGarbCrotchPadUPP
         amount: 25
@@ -76,7 +76,7 @@
         amount: 2
       - id: AU14ArmorGarbLargeWebbingUPP
         amount: 2
-      - id: U14ArmorGarbSmallWebbingUP
+      - id: AU14ArmorGarbSmallWebbingUPP
         amount: 2
       - id: AU14ArmorGarbJunglePonchoUPP
         amount: 25
@@ -659,27 +659,18 @@
     - name: Weapons
       choices: { CMUPrimaryWeapon: 1 }
       entries:
-      - id: RMCWeaponRifleType71
-      - id: RMCWeaponRifleType71C
-      - id: RMCWeaponRifleAK4047
-      - id: RMCWeaponSMGType64
-      - id: RMCWeaponSMGType19
+      - id: AU14WeaponRifleAG80
     - name: Weapon Ammunition
       entries:
-      - id: RMCMagazineRifleType71
-        amount: 120
-      - id: RMCMagazineRifleType71AP
+      - id: AU14MagazineRifleAG80
+        amount: 240
+      - id: AU14MagazineRifleAG80AP
         amount: 2
-      - id: RMCMagazineRifleAK4047
-        amount: 120
-      - id: RMCMagazineSMGType64
-        amount: 120
-      - id: RMCMagazineSMGType19
-        amount: 120
+      - id: AU14MagazineRifleAG80Ext
+        amount: 2
     - name: Handguns
       choices: { CMUHandgunsWeapon: 1 }
       entries:
-      - id: RMCWeaponPistolL54Empty
       - id: RMCWeaponPistolT74
     - name: Handgun Ammunition
       entries:

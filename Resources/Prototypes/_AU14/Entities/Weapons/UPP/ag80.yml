@@ -77,25 +77,17 @@
           tags:
           - AU14AttachmentAG80StockCollapsible
       rmc-aslot-underbarrel:
-        startingAttachable: RMCAttachmentU1GrenadeLauncher
+        locked: true
+        startingAttachable: AU14AttachmentGP45GrenadeLauncher
         whitelist:
           tags:
-          - RMCAttachmentAngledGrip
-          - RMCAttachmentBipod
-          - RMCAttachmentFlashlightGrip
-          - RMCAttachmentGyroscopicStabilizer
-          - RMCAttachmentLaserSight
-          - RMCAttachmentU1GrenadeLauncher
-          - RMCAttachmentU7UnderbarrelShotgun
-          - RMCAttachmentVerticalGrip
-          - RMCAttachmentExtinguisher
-          - RMCAttachmentFlamer
+          - AU14AttachmentGP45GrenadeLauncher
   - type: AttachableHolderVisuals
     offsets:
-      rmc-aslot-barrel: 0.75, 0.03
-      rmc-aslot-rail: -0.07, 0.18
-      rmc-aslot-stock: -0.78, 0.0325
-      rmc-aslot-underbarrel: 0.349, -0.375
+      rmc-aslot-barrel: 0.84, 0.085
+      rmc-aslot-rail: -0.07, 0.16
+      rmc-aslot-stock: -0.5, 0.03
+      rmc-aslot-underbarrel: 0.1, -0.1
   - type: ItemCamouflage
     camouflageVariations: {}
   - type: Tag
@@ -180,7 +172,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
-      color: "#1F951F"
+      color: "#e5b13c"
   - type: MagazineVisuals
     magState: mag
     steps: 2
@@ -309,6 +301,97 @@
   - type: ItemCamouflage
     camouflageVariations: {}
 
+- type: entity
+  parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
+  id: AU14AttachmentGP45GrenadeLauncher
+  name: GP-45 grenade launcher
+  description: A weapon-mounted, reloadable grenade launcher.
+  components:
+  - type: Sprite
+    sprite: _AU14/Weapons/Guns/Attachments/upp_attachments.rsi
+    layers:
+    - state: grenade-ag80
+      map: [ "enum.BreechVisuals.Open" ]
+  - type: Item
+    size: Normal
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: RMCAmmoEject
+    containerID: ballistic-ammo
+    ejectSound:
+      path: /Audio/_RMC14/Weapons/Guns/Reload/grenade_insert.ogg
+  - type: AmmoCounter
+  - type: Gun
+    projectileSpeed: 20
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_ugl.ogg
+    resetOnHandSelected: false
+  - type: RMCSelectiveFire
+    baseFireRate: 0.417
+  - type: GunIgnorePrediction
+  - type: GunIFF
+    enabled: true
+  - type: BallisticAmmoProvider
+    cycleable: false
+    whitelist:
+      tags:
+      - RMCGrenadeM40
+      - RMCAirburstGrenade
+    capacity: 1
+    soundInsert:
+      path: /Audio/_RMC14/Weapons/Guns/Reload/grenade_insert.ogg
+      params:
+        volume: -2
+  - type: OnShootTriggerAmmoTimer
+    delay: 1.5
+    beepInterval: 2
+    initialBeepDelay: 0
+    beepSound:
+      path: "/Audio/Effects/beep1.ogg"
+      params:
+        volume: 5
+    timerStart: enum.TimerStartMode.OnHitGround
+  - type: ShootAtFixedPoint
+    shootArcProj: true
+    maxFixedRange: 7
+  - type: UniqueAction
+  - type: BreechLoaded
+    needOpenClose: true
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.BreechVisuals.Open:
+        enum.BreechVisuals.Open:
+          True: { state: grenade-ag80-open }
+          False: { state: grenade-ag80 }
+  - type: AttachableToggleable
+    userOnly: true
+    attachedOnly: true
+    supercedeHolder: true
+    wieldedUseOnly: true
+    activatePopupText: attachable-popup-switch-to-generic
+    deactivatePopupText: attachable-popup-switch-from-generic
+    actionName: Switch to the GP-45 Grenade Launcher
+    actionDesc: Switch to using the underbarrel grenade launcher.
+    icon:
+      sprite: _AU14/Weapons/Guns/Attachments/upp_attachments.rsi
+      state: grenade-ag80
+    iconActive:
+      sprite: _AU14/Weapons/Guns/Attachments/upp_attachments.rsi
+      state: grenade-ag80-on
+  - type: AttachableVisuals
+    redrawOnAppearanceChange: true
+  - type: Tag
+    tags:
+    - RMCAttachmentUnderbarrel
+    - AU14AttachmentGP45GrenadeLauncher
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
+      state: all
+
 - type: Tag
   id: AU14WeaponRifleAG80
 
@@ -330,3 +413,5 @@
 - type: Tag
   id: AU14CartridgeRifle97x16mmAP
 
+- type: Tag
+  id: AU14AttachmentGP45GrenadeLauncher
