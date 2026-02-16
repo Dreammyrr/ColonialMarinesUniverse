@@ -19,16 +19,20 @@
   suffix: AU14
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/engi.rsi
+    sprite: _AU14/Clothing/UPP/jumpsuits/engi.rsi
 
 - type: entity
-  parent: AU14FatiguesUPP
+  parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: AU14JumpsuitMPUPP
   name: UPP military police fatigues
   suffix: AU14
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/mp.rsi
+    sprite: _AU14/Clothing/UPP/jumpsuits/mp.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+    - AU14PatchUPPNavalInfantry
   
 - type: entity
   parent: AU14FatiguesUPP
@@ -37,16 +41,20 @@
   suffix: AU14
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Uniforms/SPP/medic.rsi
+    sprite: _AU14/Clothing/UPP/jumpsuits/medic.rsi
 
 - type: entity
-  parent: AU14FatiguesUPP
+  parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   name: UPP officer fatigues
   id: AU14JumpsuitOfficerUPP
   suffix: AU14
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/officer.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+    - AU14PatchUPPNavalInfantry
 
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]

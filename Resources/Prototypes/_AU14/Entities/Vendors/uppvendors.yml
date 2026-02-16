@@ -34,9 +34,9 @@
         amount: 25
       - id: AU14WebbingDumpPouch
         amount: 25
-      - id: AU14WebbingAdminPouch
+      - id: AU14WebbingAdminPouchUPP
         amount: 15
-      - id: AU14WebbingDropPouch
+      - id: AU14WebbingDropPouchUPP
         amount: 15
     - name: Headgear
       entries:
@@ -44,9 +44,9 @@
         amount: 25
       - id: AU14UPPPatrolCap
         amount: 25
-      - id: AU14UPPBoonie
-        amount: 25
       - id: CMHeadCapSPPBeret
+        amount: 25
+      - id: AU14UPPBoonie
         amount: 25
       - id: AU14UPPUshanka
         amount: 25
