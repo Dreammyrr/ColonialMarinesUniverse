@@ -928,7 +928,7 @@
 - type: auThirdParty
   id: UPPGROMSpawn
   partyspawn: UPPGROMSpawn
-  enterbyshuttle: True
+  enterbyshuttle: False
   weight: 20
   minplayers: 0
   maxplayers: 400
@@ -952,7 +952,7 @@
 - type: auThirdParty
   id: UPPGROMSpawnAlt
   partyspawn: UPPGROMSpawnAlt
-  enterbyshuttle: True
+  enterbyshuttle: False
   weight: 20
   minplayers: 0
   maxplayers: 400
@@ -976,7 +976,7 @@
 - type: auThirdParty
   id: UPPGROMSpawnAlt2
   partyspawn: UPPGROMSpawnAlt2
-  enterbyshuttle: True
+  enterbyshuttle: False
   weight: 20
   minplayers: 0
   maxplayers: 400
