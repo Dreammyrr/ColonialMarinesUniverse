@@ -95,6 +95,55 @@
     - AU14WeaponRifleAG80
 
 - type: entity
+  parent: AU14WeaponRifleAG80
+  id: AU14WeaponRifleAG80Filled
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: AU14MagazineRifleAG80
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - AU14MagazineRifleAG80
+          - AU14MagazineRifleAG80AP
+          - AU14MagazineRifleAG80Ext
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - RMCAttachmentBarrelCharger
+          - RMCAttachmentExtendedBarrel
+          - RMCAttachmentExtendedCompensator
+          - RMCAttachmentSuppressor
+          - RMCM5Bayonet
+      rmc-aslot-rail:
+        startingAttachable: RMCAttachmentRailFlashlight
+        whitelist:
+          tags:
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentMagneticHarness
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS6ReflexSight
+          - RMCAttachmentS84xTelescopicScope
+          - RMCAttachmentS42xTelescopicMiniscope
+      rmc-aslot-stock:
+        startingAttachable: AU14AttachmentAG80StockCollapsible
+        whitelist:
+          tags:
+          - AU14AttachmentAG80StockCollapsible
+      rmc-aslot-underbarrel:
+        locked: true
+        startingAttachable: AU14AttachmentGP45GrenadeLauncher
+        whitelist:
+          tags:
+          - AU14AttachmentGP45GrenadeLauncher
+
+- type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleAG80
   name: "AG80 magazine (9.7x16mm)"

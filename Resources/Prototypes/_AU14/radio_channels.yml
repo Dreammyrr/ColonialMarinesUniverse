@@ -89,3 +89,11 @@
   frequency: 1607
   color: "#7A967E"
   longRange: true
+
+- type: radioChannel
+  id: UPPSOF
+  name: chat-radio-uppsof
+  keycode: "7"
+  frequency: 1533
+  color: "#e4860c"
+  longRange: true
