@@ -865,7 +865,7 @@
     outerClothing: RMCOuterClothingExternalWebbingBrownFull
     jumpsuit: AU14FatiguesUPPGROM
     shoes: RMCBootsSPPFilled
-    head: AU14UPPBoonie
+    head: AU14UPPPatrolCap
     belt: AU14BeltSmartGunOperatorPistolUPPFull
     pocket1: AU14PouchIFAKFill
     pocket2: AU14PouchIFAKFill
@@ -893,7 +893,7 @@
     hands: CMHandsBrown
     shoes: RMCBootsSPPFilled
     eyes: RMCWeldingGoggles
-    head: AU14UPPBoonie
+    head: AU14UPPPatrolCap
     belt: AU14BeltMedicalUPPFullSupportTech
     pocket1: AU14PouchToolsFilledComtech
     pocket2: RMCPouchMagazineUPPFull
