@@ -98,3 +98,12 @@
   color: "#7A967E"
   longRange: true
   faction: "govfor"
+
+- type: radioChannel
+  id: OpforIntel
+  name: chat-radio-uppsof
+  keycode: "7"
+  frequency: 1533
+  color: "#e4860c"
+  longRange: true
+  faction: "opfor"
