@@ -912,7 +912,7 @@
     faction: GOVFOR
 
 - type: partySpawn
-  id: UpPGROMSpawn
+  id: UPPPGROMSpawn
   leadersToSpawn:
     AU14UPPGROMCommander: 1
   gruntsToSpawn:
@@ -936,7 +936,7 @@
   roundstart: false
 
 - type: partySpawn
-  id: UpPGROMSpawnAlt
+  id: UPPGROMSpawnAlt
   leadersToSpawn:
     AU14UPPGROMCommander: 1
   gruntsToSpawn:
@@ -960,7 +960,7 @@
   roundstart: false
 
 - type: partySpawn
-  id: UpPGROMSpawnAlt2
+  id: UPPGROMSpawnAlt2
   leadersToSpawn:
     AU14UPPGROMCommander: 1
   gruntsToSpawn:
