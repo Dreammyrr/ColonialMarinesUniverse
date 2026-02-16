@@ -65,8 +65,8 @@
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
   - type: StorageFill
     contents:
-      - id: RMCPVECaseType23
-        amount: 1
+      - id: RMCWeaponShotgunType23
+      - id: RMCAttachmentType23Stock
       - id: RMCBoxShotgunHeavyBuckshot
         amount: 2
       - id: RMCBoxShotgunHeavyFlechette

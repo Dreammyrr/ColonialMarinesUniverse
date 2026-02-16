@@ -724,9 +724,9 @@
         isAppendSquadRoleName: true
     - name: Explosives
       entries:
-      - id: CMPacketGrenadeFragOldFilled
+      - id: AU14PacketGrenadeHighExplosiveUPPFilled
         amount: 10
-      - id: RMCPacketGrenadeSmokeFilled
+      - id: AU14PacketGrenadeSmokeUPPFilled
         amount: 4
       - id: RMCExplosivePlastic
         amount: 4
