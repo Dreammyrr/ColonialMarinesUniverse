@@ -25,6 +25,27 @@
   - type: Sprite
     sprite: _AU14/Clothing/UPP/armor/upplargearmor.rsi
 
+- type: entity
+  parent: [ RMCAllowSuitStorageClothingSmartgunner, AU14BaseArmor ]
+  id: AU14ArmorSmartGunDesertCombatHarnessUPP
+  name: RVS-37 armoured automated machinegun harness
+  suffix: AU14
+  description: Harness harness specially made for RVS-37 automated machinegun.
+  components:
+  - type: Sprite
+    sprite: _AU14/Clothing/UPP/armor/upplargearmor.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,1 # 2 slots
+  - type: RMCArmorSpeedTier
+    speedTier: light
+  - type: ClothingSpeedModifier
+    walkModifier: .725
+    sprintModifier: .725
+  - type: ClothingBlockBackpack
+  - type: SmartGunArmor
+
 # coats
 
 - type: entity
