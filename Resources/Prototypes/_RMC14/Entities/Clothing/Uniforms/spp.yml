@@ -130,7 +130,7 @@
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPCiv4
   name: UPP civilian-style vest and pants
-  description: A set of civilian-style brown vest and orange pants. The material is surprisingly decent, something not often worn by the civilians of the SPP for two reasons. They typically can't afford such clothing, and if they can, it paints a target on their back.
+  description: A set of civilian-style brown vest and orange pants. The material is surprisingly decent, something not often worn by the civilians of the UPP for two reasons. They typically can't afford such clothing, and if they can, it paints a target on their back.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/civ4.rsi
