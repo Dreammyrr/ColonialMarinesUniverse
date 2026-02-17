@@ -36,8 +36,10 @@
     id: opforkillplatcoobj
     applicableModes:
     - ForceOnForce
+    - insugency
     possiblefactions:
     - opfor
+    - clf
     repeating: false
     objectivelevel: 3
     custompoints: 20

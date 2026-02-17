@@ -38,7 +38,7 @@
 - type: entity
   parent: RMCCommunicationsConsoleBase
   id: ComputerObjectivesGovfor
-  name: Objectives Console
+  name: GOVFOR Objectives Console
   description: Used to check progress on objectives
   components:
   - type: ObjectivesConsole
