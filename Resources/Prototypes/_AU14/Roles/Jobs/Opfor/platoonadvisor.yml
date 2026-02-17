@@ -40,7 +40,7 @@
     - type: Marine
       Faction: opfor
     - type: Skills
-      preset: AU14SkillPresetPlatoonCommander
+      preset: AU14SkillPresetPlatoonAdvisor
     - type: JobPrefix
       prefix: au14-job-prefix-opforadvisor
     - type: TacticalMapIcon
