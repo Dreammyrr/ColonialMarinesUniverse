@@ -13,9 +13,9 @@
   spawnTogether: true
 
 - type: auThirdParty
-  id: UPPGROMSpawn
+  id: UPPGROM
   partyspawn: UPPGROMSpawn
-  blacklistedgamemodes: forceonforce
+  blacklistedgamemodes: forceonforce, insurgency, colonyfall
   entrymethod: ground
   weight: 20
   minplayers: 0
@@ -24,7 +24,7 @@
   roundstart: true
 
 - type: partySpawn
-  id: UPPGROMSpawnAlt
+  id: UPPGROMAlt
   leadersToSpawn:
     AU14UPPGROMCommander: 1
     AU14JobUPPGROMSquadleader: 1
@@ -38,9 +38,9 @@
   spawnTogether: true
 
 - type: auThirdParty
-  id: UPPGROMSpawnAlt
+  id: UPPGROMAlt
   partyspawn: UPPGROMSpawnAlt
-  blacklistedgamemodes: forceonforce
+  blacklistedgamemodes: forceonforce, insurgency, colonyfall
   entrymethod: ground
   weight: 20
   minplayers: 0
@@ -49,7 +49,7 @@
   roundstart: true
 
 - type: partySpawn
-  id: UPPGROMSpawnAlt2
+  id: UPPGROMAlt2
   leadersToSpawn:
     AU14UPPGROMCommander: 1
     AU14JobUPPGROMSquadleader: 1
@@ -65,7 +65,7 @@
 - type: auThirdParty
   id: UPPGROMSpawnAlt2
   partyspawn: UPPGROMSpawnAlt2
-  blacklistedgamemodes: forceonforce
+  blacklistedgamemodes: forceonforce, insurgency, colonyfall
   entrymethod: ground
   weight: 20
   minplayers: 0
