@@ -1,10 +1,9 @@
 - type: job
-  parent: CMJobBase
+  parent: AU14JobSquadAutomaticRiflemanBase
   id: AU14JobOpforSquadAutomaticRifleman
   name: au14-job-name-opforsquadautomaticrifleman
   description: au14-job-description-opforsquadautomaticrifleman
   setPreference: true
-  playTimeTracker: AU14JobGOVFORSquadAutomaticRifleman
   requirements:
   - !type:TraitsRequirement
     inverted: true
@@ -54,7 +53,7 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: smartgunner
-  hidden: false
+  hidden: true
 
 - type: startingGear
   id: AU14GearopforSquadAutomaticRifleman

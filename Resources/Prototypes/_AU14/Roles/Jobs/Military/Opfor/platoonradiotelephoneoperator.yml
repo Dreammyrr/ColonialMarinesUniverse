@@ -1,10 +1,9 @@
 - type: job
-  parent: CMJobBase
+  parent: AU14JobRadioTelephoneOperatorBase
   id: AU14JobOpforRadioTelephoneOperator
   name: au14-job-name-radiotelephoneoperator
   description: au14-job-description-radiotelephoneoperator
   setPreference: true
-  playTimeTracker: AU14JobGOVFORRadioTelephoneOperator
   requirements:
   - !type:TraitsRequirement
     inverted: true
@@ -49,7 +48,7 @@
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
     - type: MarineOrders
-  hidden: false
+  hidden: true
 
 - type: startingGear
   id: AU14GearopforRadioTelephoneOperator

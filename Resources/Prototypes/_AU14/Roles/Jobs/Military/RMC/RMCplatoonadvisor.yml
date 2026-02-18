@@ -1,11 +1,10 @@
 - type: job
-  parent: CMJobBase
+  parent: AU14JobadvisorBase
   id: AU14JobGOVFORadvisorRMC
   name: au14-job-name-govforadvisor
   description: au14-job-description-govforadvisor
   setPreference: true
   canBeAntag: false
-  playTimeTracker: AU14JobGOVFORadvisor
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 3600 # Set to 72000 once we are fully launched AU14 todo
@@ -48,4 +47,4 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
-  hidden: false
+  hidden: true

@@ -1,30 +1,38 @@
 - type: job
-  parent: CMJobBase
-  id: AU14JobOpforSquadRifleman
-  name: au14-job-name-opforsquadrifleman
-  description: au14-job-description-opforsquadrifleman
+  parent: AU14JobSquadCombatTechBase
+  id: AU14JobOPFORSquadCombatTech
+  name: au14-job-name-opforsquadcombattech
+  description: au14-job-description-opforsquadcombattech
   setPreference: true
-  playTimeTracker: AU14JobGOVFORSquadRifleman
   requirements:
   - !type:TraitsRequirement
     inverted: true
     traits:
     - Epilepsy
+    - NonResuscitable
   ranks:
+    RMCRankCorporal:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORSquadCombatTech
+      time: 216000 # 60 hours
+    RMCRankLanceCorporal:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORSquadCombatTech
+      time: 108000 # 30 hours
     RMCRankPrivateFirstClass:
     - !type:RoleTimeRequirement
-      role: AU14JobGOVFORSquadRifleman
+      role: AU14JobGOVFORSquadCombatTech
       time: 54000 # 15 hours
     RMCRankPrivate: []
-  startingGear: AU14GearopforSquadRifleman
-  dummyStartingGear: AU14GearopforRiflemanDummy
-  icon: "CMJobIconEmpty"
+  startingGear: AU14GearOPFORSquadCombatTech
+  dummyStartingGear: AU14GearOPFORCTDummy
+  icon: "AU14JobIconOPFORCT"
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-opfor
   accessGroups:
-  - AU14OpforSquad
-  hasIcon: false
+  - AU14OpforEngineering
+  hasIcon: true
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial
@@ -35,33 +43,36 @@
     - type: Marine
       Faction: opfor
     - type: Skills
-      preset: AU14SkillPresetPlatoonRifleman
+      preset: AU14SkillPresetPlatoonCombatTechnician
     - type: JobPrefix
-      prefix: au14-job-prefix-opforsquadrifleman
+      prefix: au14-job-prefix-opforsquadcombattech
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
-  hidden: false
+    - type: CMVendorUser
+      id: AU14JobOPFORSquadCombatTech
+      points: 50
+  hidden: true
 
 - type: startingGear
-  id: AU14GearopforSquadRifleman
+  id: AU14GearOPFORSquadCombatTech
   equipment:
-    id: AU14IDCardopforSquadRifleman
+    id: AU14IDCardOPFORCT
     ears: AU14HeadsetSectionOpfor
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: AU14SpawnPointopforSquadRifleman
-  name: Spawn Point opfor Squad Rifleman
+  id: AU14SpawnPointOPFORSquadCombatTech
+  name: Spawn Point OPFOR Comtech
   components:
   - type: SpawnPoint
-    job_id: AU14JobOpforSquadRifleman
+    job_id: AU14JobOPFORSquadCombatTech
   - type: Sprite
     state: syn_spawn
 
 - type: startingGear
-  id: AU14GearopforRiflemanDummy
+  id: AU14GearOPFORCTDummy
   equipment:
     outerClothing: AU14ArmorM3JungleThree
     shoes: AU14BootsJungle

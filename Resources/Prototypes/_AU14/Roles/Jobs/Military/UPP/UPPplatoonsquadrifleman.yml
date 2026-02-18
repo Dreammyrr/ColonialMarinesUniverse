@@ -1,10 +1,9 @@
 - type: job
-  parent: CMJobBase
+  parent: AU14JobSquadRiflemanBase
   id: AU14JobGOVFORSquadRiflemanUPP
   name: Rifleman
   description: au14-job-description-govforsquadrifleman
   setPreference: false
-  playTimeTracker: AU14JobGOVFORSquadRifleman
   ranks:
     UPP_Yefreytor:
     - !type:RoleTimeRequirement
@@ -39,4 +38,4 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
-  hidden: false
+  hidden: true

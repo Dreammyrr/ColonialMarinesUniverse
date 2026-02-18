@@ -1,11 +1,10 @@
 - type: job
-  parent: CMJobBase
+  parent: AU14JobAuxSupportSynthBase
   id: AU14JobOPFORAuxSupportSynth
   name: au14-job-name-opforauxsupportsynth
   description: au14-job-description-opforauxsupportsynth
   setPreference: true
   canBeAntag: false
-  playTimeTracker: AU14JobGOVFORAuxSupportSynth
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 7200 # 2 hours
@@ -61,7 +60,7 @@
         types:
           Blunt: 35
     - type: Synth
-  hidden: false
+  hidden: true
 
 - type: startingGear
   id: AU14GearOPFORAuxSupportSynth

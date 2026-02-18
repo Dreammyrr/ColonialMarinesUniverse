@@ -1,34 +1,32 @@
 - type: job
-  parent: CMJobBase
-  id: AU14JobOpforDSPilot
-  name: au14-job-name-opfordspilot
-  description: au14-job-description-opfordspilot
+  parent: AU14JobDCCBase
+  id: AU14JobOpforDCC
+  name: au14-job-name-opfordcc
+  description: au14-job-description-opfordcc
   setPreference: true
-  canBeAntag: false
   requirements:
-  - !type:AgeRequirement
-    requiredAge: 25
   - !type:TraitsRequirement
     inverted: true
     traits:
-    - SocialAnxietyHeavy
-    - FrontalLisp
-    - NonResuscitable
     - Epilepsy
-  playTimeTracker: AU14JobGOVFORDSPilot
+    - NonResuscitable
   ranks:
-    RMCRankCaptain:
+    AU14RankUSASFCMSgt:
     - !type:RoleTimeRequirement
-      role: AU14JobGOVFORDSPilot
+      role: AU14JobGOVFORDCC
       time: 432000 # 120 hours
-    RMCRankFirstLT:
+    AU14RankUSASFSMSgt:
     - !type:RoleTimeRequirement
-      role: AU14JobGOVFORDSPilot
+      role: AU14JobGOVFORDCC
       time: 216000 # 60 hours
-    RMCRankSecondLT: []
-  startingGear: AU14GearopforDSPilot
-  dummyStartingGear: AU14GearopforDSPilotDummy
-  icon: "AU14JobIconOPFORPilotOfficer"
+    AU14RankUSASFMasterSergeant:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORDCC
+      time: 43200 # 12 hours
+    AU14RankUSASFTechnicalSergeant: []
+  startingGear: AU14GearopforDCC
+  dummyStartingGear: AU14GearopforDCCDummy
+  icon: "AU14JobIconOPFORDCC"
   requireAdminNotify: true
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-opfor
@@ -46,37 +44,36 @@
     - type: Marine
       Faction: opfor
     - type: Skills
-      preset: AU14SkillPresetPlatoonDP
+      preset: AU14SkillPresetPlatoonDCC
     - type: JobPrefix
-      prefix: au14-job-prefix-opfordspilot
+      prefix: au14-job-prefix-opfordcc
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
-  hidden: false
+  hidden: true
 
 - type: startingGear
-  id: AU14GearopforDSPilot
+  id: AU14GearopforDCC
   equipment:
-    id: AU14IDCardopforDSPilot
+    id: AU14IDCardopforDCC
     ears: AU14HeadsetSectionLeaderopfor
 
 - type: entity
   parent: CMSpawnPointJobBase
-  id: AU14SpawnPointopforDSPilot
-  name: Spawn Point opfor Dropship Pilot
+  id: AU14SpawnPointopforDCC
+  name: Spawn Point opfor Dropship Crew Chief
   components:
   - type: SpawnPoint
-    job_id: AU14JobOpforDSPilot
+    job_id: AU14JobOpforDCC
   - type: Sprite
     state: syn_spawn
 
 - type: startingGear
-  id: AU14GearopforDSPilotDummy
+  id: AU14GearopforDCCDummy
   equipment:
     outerClothing: AU14USASFICPS2
     shoes: CMBootsBrown
-    mask: AU14MaskUSASFPilotOxygen
     head: AU14USASFAirCrewHelmet
     jumpsuit: AU14USASFPilotJumpsuit
-    ears: AU14HeadsetSectionLeaderopfor
+    ears: AU14HeadsetSectionOpfor

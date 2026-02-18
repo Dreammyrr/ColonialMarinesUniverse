@@ -1,11 +1,10 @@
 - type: job
-  parent: CMJobBase
+  parent: AU14JobDSPilotBase
   id: AU14JobGOVFORDSPilotUPP
   name: Dropship Pilot
   description: au14-job-description-govfordspilot
   setPreference: false
   canBeAntag: false
-  playTimeTracker: AU14JobGOVFORDSPilot
   ranks:
     UPP_MariscalDeCampo:
     - !type:RoleTimeRequirement
@@ -53,4 +52,4 @@
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
-  hidden: false
+  hidden: true
