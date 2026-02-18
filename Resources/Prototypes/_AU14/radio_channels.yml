@@ -86,7 +86,7 @@
   name: chat-radio-govforbravo
   keycode: "z"
   frequency: 1606
-  color: "#B9A76D"
+  color: "#594F00"
   longRange: true
   faction: "govfor"
 
@@ -95,7 +95,7 @@
   name: chat-radio-govforcharlie
   keycode: "f"
   frequency: 1607
-  color: "#7A967E"
+  color: "#2B0045"
   longRange: true
   faction: "govfor"
 
