@@ -36,10 +36,11 @@
   description: This is used by opfor personnel to communicate on the radio.
   components:
   - type: GrantSquadLeaderTracker
-    defaultMode: CommandingOfficer
+    defaultMode: SquadLeader
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: Sprite
     state: generic_headset
   - type: ContainerFill
@@ -54,10 +55,11 @@
   description: This is used by OPFOR command members to communicate on the radio.
   components:
   - type: GrantSquadLeaderTracker
-    defaultMode: CommandingOfficer
+    defaultMode: SquadLeader
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: Sprite
     state: generic_headset
   - type: ContainerFill
@@ -77,10 +79,11 @@
   description: An encryption key used to communicate on OPFOR ATC channels.
   components:
   - type: GrantSquadLeaderTracker
-    defaultMode: CommandingOfficer
+    defaultMode: SquadLeader
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: EncryptionKey
     channels:
     - opforjtac

@@ -11,6 +11,7 @@
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: EncryptionKey
   - type: Sprite
     state: we_ya_key
@@ -22,10 +23,12 @@
   description: An encryption key used to communicate on all GOVFOR channels.
   components:
   - type: GrantSquadLeaderTracker
-    defaultMode: CommandingOfficer
+    defaultMode: SquadLeader
+
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: EncryptionKey
     channels:
     - MarineCommand
@@ -49,6 +52,7 @@
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: EncryptionKey
     channels:
     - GovforBravo
@@ -67,6 +71,7 @@
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: EncryptionKey
     channels:
     - GovforCharlie
@@ -85,6 +90,7 @@
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: EncryptionKey
     channels:
     - GovforIntel
@@ -99,10 +105,12 @@
   description: This is used by GOVFOR personnel to communicate on the radio.
   components:
   - type: GrantSquadLeaderTracker
-    defaultMode: CommandingOfficer
+    defaultMode: SquadLeader
+
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
   - type: GrantTacMapAlert
 
   - type: Sprite
@@ -119,10 +127,13 @@
   description: This is used by GOVFOR command members to communicate on the radio.
   components:
   - type: GrantSquadLeaderTracker
-    defaultMode: CommandingOfficer
+    defaultMode: SquadLeader
+
     trackerModes:
     - SquadLeader
     - FireteamLeader
+    - BattleBuddy
+
   - type: Sprite
     state: generic_headset
   - type: ContainerFill
