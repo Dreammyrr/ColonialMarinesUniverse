@@ -15,6 +15,7 @@
 - type: auThirdParty
   id: UPPGROM
   partyspawn: UPPGROMSpawn
+  whitelistedgamemodes: DistressSignal
   entrymethod: ground
   weight: 20
   minplayers: 0
@@ -39,6 +40,7 @@
 - type: auThirdParty
   id: UPPGROMAlt
   partyspawn: UPPGROMSpawnAlt
+  whitelistedgamemodes: DistressSignal
   entrymethod: ground
   weight: 20
   minplayers: 0
@@ -63,6 +65,7 @@
 - type: auThirdParty
   id: UPPGROMAlt2
   partyspawn: UPPGROMSpawnAlt2
+  whitelistedgamemodes: DistressSignal
   entrymethod: ground
   weight: 20
   minplayers: 0
