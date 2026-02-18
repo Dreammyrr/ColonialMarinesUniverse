@@ -23,7 +23,7 @@
   roundstart: true
 
 - type: partySpawn
-  id: UPPGROMAlt
+  id: UPPGROMSpawnAlt
   leadersToSpawn:
     AU14UPPGROMCommander: 1
     AU14JobUPPGROMSquadleader: 1
@@ -47,7 +47,7 @@
   roundstart: true
 
 - type: partySpawn
-  id: UPPGROMAlt2
+  id: UPPGROMSpawnAlt2
   leadersToSpawn:
     AU14UPPGROMCommander: 1
     AU14JobUPPGROMSquadleader: 1
@@ -61,7 +61,7 @@
   spawnTogether: true
 
 - type: auThirdParty
-  id: UPPGROMSpawnAlt2
+  id: UPPGROMAlt2
   partyspawn: UPPGROMSpawnAlt2
   entrymethod: ground
   weight: 20
