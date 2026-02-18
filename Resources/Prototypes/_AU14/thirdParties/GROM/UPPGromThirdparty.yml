@@ -15,7 +15,7 @@
 - type: auThirdParty
   id: UPPGROMSpawn
   partyspawn: UPPGROMSpawn
-  blacklistedgamemodes: forceonforce, insurgency, colonyfall
+  whitelistedgamemodes: DistressSignal
   entrymethod: ground
   weight: 20
   minplayers: 0
@@ -40,7 +40,7 @@
 - type: auThirdParty
   id: UPPGROMSpawnAlt
   partyspawn: UPPGROMSpawnAlt
-  blacklistedgamemodes: forceonforce, insurgency, colonyfall
+  whitelistedgamemodes: DistressSignal
   entrymethod: ground
   weight: 20
   minplayers: 0
@@ -65,7 +65,7 @@
 - type: auThirdParty
   id: UPPGROMSpawnAlt2
   partyspawn: UPPGROMSpawnAlt2
-  blacklistedgamemodes: forceonforce, insurgency, colonyfall
+  whitelistedgamemodes: DistressSignal
   entrymethod: ground
   weight: 20
   minplayers: 0
