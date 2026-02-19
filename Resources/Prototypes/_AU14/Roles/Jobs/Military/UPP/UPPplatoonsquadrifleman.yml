@@ -5,11 +5,11 @@
   description: au14-job-description-govforsquadrifleman
   setPreference: false
   ranks:
-    UPP_Yefreytor:
+    UPP_Gefreiter:
     - !type:RoleTimeRequirement
       role: AU14JobGOVFORSquadRifleman
-      time: 1800 # 30 hours
-    UPP_Ryadovoy: []
+      time: 108000 # 30 hours
+    UPP_Private: []
   startingGear: AU14GearGOVFORSquadRifleman
   dummyStartingGear: AU14GearGOVFORRiflemanDummy
   icon: "AU14JobIconRFN"

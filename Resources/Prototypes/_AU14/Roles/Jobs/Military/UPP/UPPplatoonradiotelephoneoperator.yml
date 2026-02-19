@@ -5,11 +5,11 @@
   description: au14-job-description-radiotelephoneooerator
   setPreference: false
   ranks:
-    UPP_StarschyRyadovoy:
+    UPP_SeniorGefreiter:
     - !type:RoleTimeRequirement
       role: AU14JobGOVFORRadioTelephoneOperator
-      time: 1800 # 30 hours
-    UPP_Yefreytor: []
+      time: 108000 # 30 hours
+    UPP_Gefreiter: []
   startingGear: AU14GearGOVFORRadioTelephoneOperator
   dummyStartingGear: AU14GearGOVFORRadioTelephoneOperatorDummy
   icon: "AU14JobIconRTO"

@@ -6,7 +6,7 @@
   setPreference: false
   canBeAntag: false
   ranks:
-    UPP_Serzhant: []
+    UPP_Plutonowy: []
   startingGear: AU14GearGOVFORSquadSergeant
   dummyStartingGear: AU14GearGOVFORSquadSergantDummy
   icon: "AU14JobIconSarge"

@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": null,
-  "copyright": null,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from cmss13 at https://github.com/cmss13-devs/cmss13-pve/blob/master/icons/obj/items/clothing/uniforms.dmi, https://github.com/cmss13-devs/cmss13-pve/blob/master/icons/mob/humans/onmob/uniform_0.dmi",
   "size": {
     "x": 32,
     "y": 32
@@ -12,15 +12,11 @@
       "directions": 4
     },
     {
-      "name": "upp_uniform_d",
-      "directions": 4
-    },
-    {
       "name": "sleeves-equipped-INNERCLOTHING",
       "directions": 4
     },
     {
-      "name": "upp_uniform_dj",
+      "name": "jacket-equipped-INNERCLOTHING",
       "directions": 4
     },
     {

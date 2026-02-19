@@ -24,7 +24,11 @@
     - !type:RoleTimeRequirement
       role: AU14JobGOVFORDSPilot
       time: 216000 # 60 hours
-    RMC_WarrantOfficer1: []
+    RMC_WarrantOfficer1:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORDSPilot
+      time: 108000 # 30 hours
+    RMC_WarrantOfficer2: []
   startingGear: AU14GearGOVFORDSPilot
   dummyStartingGear: AU14GearGOVFORDSPilotDummy
   icon: "AU14JobIconPilotOfficer"

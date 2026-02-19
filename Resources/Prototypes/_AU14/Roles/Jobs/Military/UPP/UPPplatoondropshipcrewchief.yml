@@ -6,11 +6,15 @@
   setPreference: false
   canBeAntag: false
   ranks:
-    UPP_StarschySerzhant:
+    UPP_Chotar:
     - !type:RoleTimeRequirement
       role: AU14JobGOVFORDCC
-      time: 1800 # 30 hours
-    UPP_Serzhant: []
+      time: 432000 # 120 hours
+    UPP_StaffSergeant:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORDCC
+      time: 108000 # 30 hours
+    UPP_Sergeant: []
   startingGear: AU14GearGOVFORDCC
   dummyStartingGear: AU14GearGOVFORDCCDummy
   icon: "AU14JobIconDCC"

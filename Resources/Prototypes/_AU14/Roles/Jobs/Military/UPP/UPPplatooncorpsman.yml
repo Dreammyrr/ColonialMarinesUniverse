@@ -5,11 +5,11 @@
   description: au14-job-description-govforplatooncorpsman
   setPreference: false
   ranks:
-    UPP_StarschyRyadovoy:
+    UPP_Corporal:
     - !type:RoleTimeRequirement
       role: AU14JobGOVFORPlatoonCorpsman
-      time: 1800 # 30 hours
-    UPP_Yefreytor: []
+      time: 108000 # 30 hours
+    UPP_SeniorGefreiter: []
   startingGear: AU14GearGOVFORPlatoonCorpsman
   dummyStartingGear: AU14GearGOVFORCorpsmanDummy
   icon: "AU14JobIconCorpsman"

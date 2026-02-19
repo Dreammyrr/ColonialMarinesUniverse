@@ -5,11 +5,15 @@
   description: au14-job-description-govforSSG
   setPreference: false
   ranks:
-    UPP_Plutonowy:
+    UPP_Chotar:
     - !type:RoleTimeRequirement
       role: AU14JobGOVFORSectionSergeant
-      time: 1800 # 30 hours
-    UPP_StarschySerzhant: []
+      time: 216000 # 30 hours
+    UPP_StaffSergeant:
+    - !type:RoleTimeRequirement
+      role: AU14JobGOVFORSectionSergeant
+      time: 108000 # 30 hours
+    UPP_Sergeant: []
   startingGear: AU14GearGOVFORSectionSergeant
   dummyStartingGear: AU14GearGOVFORPlatoonSergantDummy
   icon: "AU14JobIconPlatoonSarge"
