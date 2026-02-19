@@ -15,7 +15,10 @@
 - type: auThirdParty
   id: UPPGROM
   partyspawn: UPPGROMSpawn
-  blacklistedgamemodes: insurgency
+  blacklistedgamemodes: 
+    - insurgency
+    - forceonforce
+    - colonyfall
   entrymethod: ground
   weight: 20
   minplayers: 0
@@ -40,7 +43,10 @@
 - type: auThirdParty
   id: UPPGROMAlt
   partyspawn: UPPGROMSpawnAlt
-  blacklistedgamemodes: insurgency
+  blacklistedgamemodes: 
+    - insurgency
+    - forceonforce
+    - colonyfall
   entrymethod: ground
   weight: 20
   minplayers: 0
@@ -65,7 +71,10 @@
 - type: auThirdParty
   id: UPPGROMAlt2
   partyspawn: UPPGROMSpawnAlt2
-  blacklistedgamemodes: insurgency
+  blacklistedgamemodes: 
+    - insurgency
+    - forceonforce
+    - colonyfall
   entrymethod: ground
   weight: 20
   minplayers: 0
