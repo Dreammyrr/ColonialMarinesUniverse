@@ -127,3 +127,13 @@
     job: AU14JobOPFORadvisor
   - type: ItemIFF
     faction: OPFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardOPFORDoctor
+  name: doctor ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobOPFORMilitaryDoctor
+  - type: ItemIFF
+    faction: OPFOR
