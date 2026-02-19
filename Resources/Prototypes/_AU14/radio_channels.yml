@@ -68,7 +68,7 @@
   name: chat-radio-opforcharlie
   keycode: "x"
   frequency: 1604
-  color: "#7A967E"
+  color: "#bb44bd"
   longRange: true
   faction: "opfor"
 

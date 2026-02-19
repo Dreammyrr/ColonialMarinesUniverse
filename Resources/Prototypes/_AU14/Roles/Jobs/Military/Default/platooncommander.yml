@@ -36,12 +36,13 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: CommendationGiver
     - type: NpcFactionMember
       factions:
       - GOVFOR
     - type: Marine
       Faction: govfor
+    - type: CommendationGiver
+    - type: InnateCommandSpeech
     - type: Skills
       preset: AU14SkillPresetPlatoonCommander
     - type: JobPrefix

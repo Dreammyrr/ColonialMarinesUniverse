@@ -85,7 +85,8 @@
   id: AU14GearGOVFORAuxSupportSynthRMC
   equipment:
     id: AU14IDCardGOVFORAuxSupportSynth
-    ears: AU14HeadsetSectionLeader
+    ears: RMCM5CameraGear
+    ears2: AU14HeadsetSectionLeader
     gloves: AU14HandsRMC
     shoes: RMCBootsRoyalFilled
     jumpsuit: AU14CivilianBoilerSuitDarkBlueSynthRMC

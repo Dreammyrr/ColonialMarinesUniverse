@@ -37,6 +37,7 @@
   - !type:AddComponentSpecial
     components:
     - type: CommendationGiver
+    - type: InnateCommandSpeech
     - type: NpcFactionMember
       factions:
       - OPFOR
