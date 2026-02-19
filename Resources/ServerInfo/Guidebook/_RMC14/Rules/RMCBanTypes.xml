@@ -1,22 +1,25 @@
 ﻿<Document>
-  # Ban Types
+  # Tipos de Banimento
 
-  Bans can be appealed on the discord in the ban appeals section.
+  Banimentos podem e devem ser apelados pelo servidor do discord.
 
-  ## Role Ban
-  Also called a "job ban", this ban prevents your character from joining or late-joining a round as one or more jobs or roles. These are often used in response to problematic behavior in particular departments or address gross inexperience in important roles such as heads of staff. These bans do not mechanically prevent you from switching to the role during a round or acting as that role, but doing so is considered ban evasion.
+  ## Banimento de Funçao ("Roleban')
+  Tambem chamado de "Roleban" ou "Job ban", essse banimento te previne de jogar ou se juntar via late-join, sendo elas uma ou varias.\nGeralmente aplicado em resposta de pessoas muito problematicas ou com o comportamento impropio para aquele departamento/funçao, e/ou se a pessoa for preucupantemente inexperiente enquanto faz uma funçao de comando/superior.\nEsse tipo de banimento nao proibe mecanicamente voce de trocar para o emprego que voce esta banido, entretanto fazer isso e considerado evasao de banimento.
 
-  ## Game Ban
-  Also called a "server ban", this ban prevents you from connecting to all CMU servers.
+  ## Banimento de servidor
+  Esse banimento te proíbe de conectar ao servidor, ou a qualquer servidor que tenha o mesmo host.
 
-  # Ban Durations
+  # Durações de banimento
 
-  ## Temporary
-  Temporary bans will be lifted automatically after a certain amount of time. If they are a game ban, they will tell you how much time is remaining when you try to connect.
+  ## temporario
+  Banimentos temporários irão automaticamente te desbanir assim que certo tempo tenha passado. Caso o banimento seja de servidor, o servidor vai automaticamente te informar a duração do banimento ao tentar entrar.
 
-  ## Indefinite
-  These bans will only be removed on a successful appeal on the discord. Any ban which doesn't tell you when it expires and doesn't specify otherwise can be presumed to be an indefinite ban.
+  ## Permanente
+  Esses banimentos são permanentes e somente serão desbanidos com apelação no Discord. Qualquer banimento que não informar uma data ou tempo para o banimento expirar, geralmente significa que é um banimento permanente.
 
-  ## Community Permanent
-  This is a ban that is only appealable if the ban was inappropriately placed, including if the ban should not have been permanent. If the result of the appeal is that the ban was appropriately placed, the ban may not be appealed again and will not be lifted. These bans are extremely rare, but are applied to players who continually cause problems even after a voucher ban or users who have completely unacceptable behavior may be permanently removed.
+  ## Banimento de Voucher
+  Esse tipo de banimento é apenas apelável via erro de administração ou um voucher de outra comunidade que está rodando um código MRP. Se o resultado do apelo disser que o banimento foi aplicado corretamente, a pessoa não será banida até a entrega do voucher, qualquer tentativa de apelo além disso será negada.\nBanimentos por voucher são extremamente raros, mas são aplicados a jogadores que continuam causando problemas mesmo após vários banimentos.
+
+  ## Banimento Permanente da Comunidade
+  Este é um banimento que só pode ser contestado se tiver sido aplicado indevidamente por erro da administração, incluindo se não deveria ter sido permanente. Se o resultado da apelação for que o banimento foi aplicado corretamente, ele não poderá ser apelado novamente e não será removido. Esses banimentos são extremamente raros, mas são aplicados a jogadores que continuam causando problemas mesmo após um banimento por voucher ou a usuários com comportamento completamente inaceitável, podendo ser removidos permanentemente da comunidade.
 </Document>
