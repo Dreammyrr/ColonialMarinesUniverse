@@ -31,6 +31,7 @@
   requireAdminNotify: true
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-govforplatco
+  whitelisted: true
   accessGroups:
   - AU14GovforCommand
   roleWeight: 0.25
