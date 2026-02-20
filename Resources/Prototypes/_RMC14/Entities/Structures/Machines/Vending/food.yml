@@ -75,7 +75,7 @@
     - name: Prepared Meals
       entries:
       - id: RMCMRESPP
-        name: SPP Combat Ration
+        name: UPP Combat Ration
         amount: 15
       - id: RMCMarinePreparedMealSPPBanush
         amount: 15

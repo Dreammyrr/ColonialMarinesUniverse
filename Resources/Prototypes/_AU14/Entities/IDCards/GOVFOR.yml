@@ -132,6 +132,26 @@
   - type: ItemIFF
     faction: GOVFOR
 
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardGOVFORDoctor
+  name: doctor ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobGOVFORMilitaryDoctor
+  - type: ItemIFF
+    faction: GOVFOR
+
+- type: entity
+  parent: CMIDCardBase
+  id: AU14IDCardSquadK9HandlerGOVFOR
+  name: k9 handler ID card
+  components:
+  - type: PresetIdCard
+    job: AU14JobGOVFORk9handler
+  - type: ItemIFF
+    faction: GOVFOR
+
   #- type: ItemIFF
   #  faction: FactionMarine
 

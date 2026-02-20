@@ -206,6 +206,16 @@
   GhostsNeeded: 0
   roundstart: false
 
+- type: auThirdParty
+  id: LACNSniperteamIntel
+  partyspawn: LACNSniperteamSpawn
+  entrymethod: shuttle #todo au14 entrymethod intel spawn/shipside
+  weight: 1
+  minplayers: 500
+  maxplayers: 600
+  GhostsNeeded: 600
+  roundstart: false
+
 - type: startingGear
   id: AU14GearLACNCommandoSniperTeamSpotter
   equipment:

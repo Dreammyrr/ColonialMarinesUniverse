@@ -68,7 +68,7 @@
   name: chat-radio-opforcharlie
   keycode: "x"
   frequency: 1604
-  color: "#7A967E"
+  color: "#bb44bd"
   longRange: true
   faction: "opfor"
 
@@ -98,3 +98,12 @@
   color: "#9D3EF0"
   longRange: true
   faction: "govfor"
+
+- type: radioChannel
+  id: UPPSOF
+  name: chat-radio-uppsof
+  keycode: "7"
+  frequency: 1533
+  color: "#e4860c"
+  longRange: true
+  faction: "opfor"
