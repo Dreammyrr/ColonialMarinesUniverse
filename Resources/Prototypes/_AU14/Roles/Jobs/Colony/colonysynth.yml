@@ -15,6 +15,7 @@
   icon: "AU14JobIconColonySynth"
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-colonycivilian
+  whitelisted: true
   accessGroups:
   - Colonist
   - auadmin
