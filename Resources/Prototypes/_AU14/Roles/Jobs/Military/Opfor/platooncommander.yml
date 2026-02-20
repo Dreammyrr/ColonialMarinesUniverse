@@ -31,6 +31,7 @@
   requireAdminNotify: true
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-opforplatco
+  whitelisted: true
   accessGroups:
   - AU14OpforCommand
   roleWeight: 0.25
