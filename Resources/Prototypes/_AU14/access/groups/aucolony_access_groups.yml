@@ -1,6 +1,4 @@
-﻿
-
-- type: accessGroup
+﻿- type: accessGroup
   id: auadmin
   tags:
   - CMAccessResearch
@@ -12,7 +10,6 @@
   - CMAccessColonyBrig
   - CMAccessColonyMedbay
   - CMAccessColonyArmory
-
 
 - type: accessGroup
   id: auengi
@@ -30,7 +27,6 @@
   - CMAccessColonyEngineering
   - CMAccessColonyMedbay
   - CMAccessColonyArmory
-
 
 - type: accessGroup
   id: aumed
