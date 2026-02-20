@@ -1,48 +1,64 @@
 ﻿<Document>
-  # General roleplay standards
+  # Padrão de roleplay geral.
 
+  ## Memória do personagem
+  - Seu personagem pode lembrar de eventos que aconteceram em missões de outras rodadas e pode conversar sobre eles, entretanto não pode mencionar a própria morte ou a morte de um personagem presente na rodada.
+  - Seu personagem não retém nenhum conhecimento de ter encontrado algum xenomorfo (xx-123) de qualquer rodada passada. Qualquer rodada que envolva xenomorfos deve ser tratada como o primeiro contato com a espécie, ao mesmo tempo que um administrador diga o contrário.
 
-  ## Character memory
-  - Your personal character may remember events that occured in previous missions and discuss them, but may not mention or remember their own death or the death of another present character.
-  - Your character does not retain any knowledge or memories of encountering Xenomorphs (XX-121) from previous rounds. All rounds involving Xenomorphs should be treated as first-contact scenarios unless explicitly stated otherwise by staff.
+  ## Você deve agir como uma pessoa real.
+  - Não use os canais de emotes ou ações para conversar, e não se refira dentro da rodada sobre coisas de fora, como administradores ou rodadas do jogo.
+  - Não se refira a memes enquanto você faz roleplay em qualquer facção, incluindo a substituição de letras em um meme como um Xenomorfo (XX-123).
+  - Não use os canais de emotes ou ações para burlar filtros, sotaques ou incapacidade de conversar (mudo).
 
-  ## Act like an actual character in this setting.
-  - Do not use text speak or emoticons in character, and do not refer to out of character things like admins or rounds in-game.
-  - Do not reference memes in character, on any faction, including substituting letters on a meme as a Xenomorph (XX-121).
-  - Do not use emotes or local out of character to bypass speech filters/accents or muteness.
-  - You are not required to write a backstory; however, you are expected to at least make an effort to act like your role.
-  - Some actions have no delay to make gameplay like reloading smoother. Do not abuse this to spam any kind of sounds.
-  - Use [textlink="acceptable character names." link="RMCCharacterNames"]
+  - Você não precisa escrever uma história de fundo.
 
-  ## Suicides
-  - You must have a valid roleplay reason to commit suicide.
-  - Starting and then cancelling a suicide will be treated the same as an actual suicide unles accidental, and also requires a valid reason.
-  - Suiciding at round-end without a valid roleplay reason will be considered end-of-round grief.
+  - Não use abreviações de texto ou emoticons durante o jogo e não se refira a coisas fora do personagem, como administradores ou rodadas.
 
-  [bold]If you are not sure if you have a valid reason, AHelp (F1) to ask.[/bold]
+  - Não faça referência a memes durante o jogo, em nenhuma facção.
 
-  [bold]Valid suicide examples:[/bold]
-  - Suiciding in a last stand scenario, when it is clear that you may be captured.
-  - Suiciding to avoid being captured by a hostile force.
-  - Suiciding with strong in character reasoning and buildup as a result of an IC mental breakdown. Command members may not commit suicide due to mental breakdowns.
+  - Não use emotes ou comandos locais fora do personagem para burlar filtros de fala/sotaques ou incapacidade de conversar.
 
-  [bold]Not valid suicide examples:[/bold]
-  - Suiciding at round end without a valid roleplay reason. Going out after a victory is not a valid reason.
-  - Suiciding in briefing.
-  - Suiciding to spite someone or because you want to stop playing the round.
-  - Suiciding after receiving bad orders.
-  - Suiciding at round-start because you didn't get the role you wanted.
-  - Suiciding because you are wounded.
+  - Você não precisa escrever uma história de fundo; no entanto, espera-se que você se esforce para agir de acordo com o seu papel.
+
+  - Algumas ações não têm atraso para tornar a jogabilidade, como recarregar, mais fluida. Não abuse disso para usar sons repetidamente.
+
+  - Use [textlink="nomes de personagens aceitáveis." link="RMCCharacterNames"]
+
+  ## Suicídios
+
+  - Você deve ter um motivo válido de roleplay para cometer suicídio. - Iniciar e depois cancelar um suicídio será tratado da mesma forma que um suicídio real, a menos que seja acidental, e também requer um motivo válido.
+  - Suicidar-se no final da rodada sem um motivo válido de interpretação será considerado luto de fim de rodada.
+
+  [bold]Se você não tiver certeza se possui um motivo válido, pressione Ajuda (F1) para perguntar.[/bold]
+
+  [bold]Exemplos válidos de suicídio:[/bold]
+  - Suicídio em um cenário de último recurso, quando é evidente que você pode ser capturado.
+
+  - Suicídio para evitar ser capturado por uma força hostil.
+
+  - Suicídio com forte justificativa e preparação dentro do personagem, como resultado de um colapso mental dentro do personagem. Membros do comando não podem cometer suicídio devido a colapsos mentais.
+
+  [bold]Exemplos inválidos de suicídio:[/bold]
+
+  - Suicídio no final da rodada sem um motivo válido de interpretação. Sair após uma vitória não é um motivo válido.
+
+  - Suicídio durante o briefing.
+
+  - Suicídio para provocar alguém ou porque você quer parar de jogar a rodada.
+
+  - Suicídio após receber ordens ruins.
+
+  - Suicídio no início da rodada porque você não conseguiu o papel que queria.
+
+  - Suicídio porque você está ferido.
 
   ## Metagaming/Powergaming
 
-  Some parts of the game cannot be covered by mechanics to ensure proper roleplay and balance.
-  - Exploitation of any current game bugs. You can ask in ahelp if something is a bug to avoid this.
-  - Player controlled Xenomorphs (XX-121) may not intentionally build on top of revivable player corpses with the [bold]intent[/bold] to hide corpses.
+  Algumas partes do jogo não podem ser cobertas por mecânicas para garantir a interpretação adequada e o equilíbrio. - Exploração de quaisquer bugs atuais do jogo. Você pode perguntar no chat de ajuda se algo é um bug para evitar isso.
+  - Xenomorfos controlados por jogadores (XX-121) não podem construir intencionalmente sobre cadáveres de jogadores revivíveis com a [bold]intenção[/bold] de esconder cadáveres.
 
-  [bold]Below is a list of common questions.[/bold]
+  [bold]Abaixo está uma lista de perguntas frequentes.[/bold]
 
-  - Using an external program to calculate coordinate locations is permitted.
-  - Xenomorphs may kill anyone, anywhere, for any reason, provided it is not detrimental to the hive. (i.e killing someone who could easily be infected, or is infected.)
-
+  - É permitido usar um programa externo para calcular coordenadas geográficas.
+  - Xenomorfos podem matar qualquer pessoa, em qualquer lugar, por qualquer motivo, desde que não seja prejudicial à colmeia. (Ex.: matar alguém que possa ser facilmente parasitado ou que ja esteja parasitado .)
 </Document>

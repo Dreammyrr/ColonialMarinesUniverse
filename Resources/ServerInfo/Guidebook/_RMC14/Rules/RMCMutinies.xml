@@ -1,30 +1,42 @@
 ﻿<Document>
-  ## Mutinies and riots require admin permission.
+  ## Motins e revoltas exigem permissão de administrador.
 
-  [bold]General[/bold]
+  [bold]Geral[/bold]
 
-  - All players, including hostile forces, must obtain admin permission before engaging in riots, mutinies, or similar activities targeted against their own or a friendly faction.
-  - Strikes, revolutions, riots, cults, or similar activities targeted against your own or a friendly faction require admin permission.
-  - Staff reserve the right to grant or deny these, and to decide if the reason given is sufficient.
+  - Todos os jogadores, incluindo forças hostis, devem obter permissão de administrador antes de se envolverem em revoltas, motins ou atividades similares contra sua própria facção ou uma facção aliada.
 
-  [bold]Mutinies[/bold]
+  - Greves, revoluções, revoltas, cultos ou atividades similares contra sua própria facção ou uma facção aliada exigem permissão de administrador.
 
-  - Only the Acting Commander or Faction Leader can be mutinied against. They must be given a chance to stand down peacefully.
-  - During the mutiny, attacking any uninvolved, medical, or surrendered personnel is forbidden.
-  - If you have surrendered during a mutiny, you must remain as such.
-  - You may not change sides unless you are surrendering.
-  - When failed, all sides must be given medical treatment.
-  - When succeeded, all sides must be given medical treatment. The next in the command chain or the person who incited the mutiny should be put in charge.
-  - Mutinies must have 3 members minimum.
+  - A staff reserva-se o direito de conceder ou negar essas permissões e de decidir se a justificativa apresentada é suficiente.
 
-  [bold]Examples of mutiny reasons:[/bold]
-  - Leader incompetence, where the next in line would lead better.
-  - Leader takes no actions in leading.
-  - Leader refuses to allow evacuation.
+  [bold]Motins[/bold]
 
-  [bold]Examples of invalid mutiny reasons:[/bold]
-  - Not liking the commander.
-  - Wanting to kill the commander.
-  - Trying to take revenge against the Faction Leader.
+  - Somente o Comandante Interino ou o Líder da Facção pode ser alvo de motins. Deve-se dar a eles a chance de se renderem pacificamente.
+
+  - Durante o motim, é proibido atacar qualquer membro da equipe médica, não envolvido ou que tenha se rendido.
+
+  - Se você se rendeu durante um motim, deve permanecer assim.
+
+  - Você não pode mudar de lado, a menos que esteja se rendendo.
+
+  - Em caso de falha, todos os lados devem receber tratamento médico.
+  - Em caso de sucesso, todos os envolvidos devem receber tratamento médico. O próximo na linha de comando ou a pessoa que incitou o motim deve assumir o comando.
+  - Os motins devem ter no mínimo 3 membros.
+
+  [bold]Exemplos de motivos para motim:[/bold]
+
+  - Incompetência do líder, sendo que o próximo na linha de sucessão seria mais adequado para liderar.
+
+  - O líder não toma nenhuma atitude para liderar.
+
+  - O líder se recusa a permitir a evacuação.
+
+  [bold]Exemplos de motivos inválidos para motim:[/bold]
+
+  - Antipatia pelo comandante.
+
+  - Desejo de matar o comandante.
+
+  - Tentativa de vingança contra o Líder da Facção.
 
 </Document>

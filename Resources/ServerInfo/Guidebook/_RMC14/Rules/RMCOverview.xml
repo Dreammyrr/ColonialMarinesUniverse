@@ -1,51 +1,58 @@
 ﻿<Document>
-  # Colonial Marines Universe Rules
+  # Regras do Universo dos Fuzileiros Coloniais (Colonial Marines Universe)
 
-  [color=#ff0000][bold]If you are unable to click any links, use the in-game guidebook version, in the escape menu.[/bold][/color]
+  [color=#ff0000][bold]Se você não conseguir clicar em nenhum link, use a versão do guia dentro do jogo, no menu de opções.[/bold][/color]
 
-  [italic]CMU is a roleplaying game with team deathmatch elements. This means players are expected, to an extent, to pretend their character is part of this world in their actions and words. This is the intended experience, and the experience the players of CMU enjoy, and is not always about winning.[/italic]
+  [italic]CMU é um jogo de RPG com elementos de combate em equipe. Isso significa que os jogadores devem, até certo ponto, fingir que seus personagens fazem parte deste mundo em suas ações e palavras. Essa é a experiência pretendida, e a experiência que os jogadores de CMU apreciam, e nem sempre se trata de vencer.[/italic]
 
-  ## Recent Changes
+  ## Mudanças Recentes
+  - . . .
 
-  ## Admin Decisions Are Final.
-  - Rules are enforced as intended. Every example of a rule break cannot be written, thus enforcement is subject to admin interpretation of the rule's intention.
-  - Admins may handle rule breaks through in-character consequences at their discretion. This does not apply to zero tolerance rules. Minor rule breaks may be requested to be handled this way.
-  - Do not argue with the staff. You may file an appeal if you feel the decision to be incorrect, not ignore it.
+  ## As Decisões da Administração São Finais.
 
-  ## Important notes
+  - As regras são aplicadas conforme o planejado. Não é possível escrever todos os exemplos de violação das regras, portanto, a aplicação está sujeita à interpretação da administração sobre a intenção da regra.
 
-  Heavily avoid using a VPN or any similar program to connect or while connected to CMU. You are putting your account at risk, which may result in your account being permanently banned.
-  If you have a legitimate reason to use a VPN, you should inform the staff via AHelp so that they may make note of it.
+  - Os administradores podem lidar com violações das regras por meio de consequências dentro do jogo, a seu critério. Isso não se aplica às regras de tolerância zero. Violações menores de regras podem ser solicitadas para serem tratadas dessa forma.
 
-  ## General Information
-  Disconnecting from or ignoring/evading admin-helps will result in action being taken.
-  This is to prevent bad actors from avoiding issues. If you need to leave urgently, let us know and it will be considered in your appeal.
+  - Não discuta/discorde com a staff. Você pode apresentar uma apelação se achar que a decisão está incorreta, não a ignore.
 
-  - [bold]These rules are not the same as other servers, should be read in their entirety.[/bold]
-  - [textlink="Ban Types and Durations" link="RMCBanTypes"]
+  ## Observações importantes
 
-  ## Zero Tolerance Rules
-  You are liable to be banned without warning for breaking these rules.
-  - [textlink="Click here to read the zero tolerance rules." link="RMCZeroTolerance"]
+  Evite ao máximo usar uma VPN ou qualquer programa similar para se conectar ou enquanto estiver conectado ao CMU. Você estará colocando sua conta em risco, o que pode resultar em banimento permanente.
 
-  ## Core Rules
-  These are the general rules of CMU. Click them for more information.
-  - [textlink="1. This is a English server, please only use English." link="RMCLanguage"]
-  - [textlink="2. Do not use multiple accounts, or alt accounts, and do not share accounts." link="RMCMultikey"]
-  - [textlink="3. Follow the rules of escalation against non-hostiles." link="RMCRulesEscalation"]
-  - [textlink="4. Don't use information gained from outside your character's knowledge." link="RMCMetaknowledge"]
-  - [textlink="5. Don't antagonize your team, don't harass players." link="RMCKindness"]
-  - [textlink="6. Don't quit a command level role without notice." link="RMCCommandRoles"]
-  - [textlink="7. Mutinies, riots and similar activity against your faction require admin permission." link="RMCMutinies"]
-  - 8. Don't disconnect if you do not get the role/kit you want, be considerate.
-  - 9. Follow the roleplay rules and standards of the server. (Outlined at the bottom of this page)
+  Se você tiver um motivo legítimo para usar uma VPN, informe a equipe via AHelp para que eles tomem nota.
 
-  ## Command
-  These rules also apply to any individual who is promoted or is acting in the place of a Command role.\n[italic]Command roles are defined as; all military roles above the rank of second liutenant or quivalent, cic staff and roles that default to the highest command position upon the start of the round when all roles are present.[/italic]
-  - [textlink="1. Military Command must follow the UCMJ." link="RMCMarineLaw"]
-  - [textlink="2. Command are held to a higher standard of play." link="RMCHigherStandards"]
+  ## Informações gerais
 
-  ## Roleplay Rules and Standards
+  Desconectar-se ou ignorar/evitar o suporte administrativo resultará em medidas administrativas.
+
+  Isso visa impedir que usuários mal-intencionados possam causar problemas. Se precisar sair com urgência, avise-nos e sua solicitação será considerada na sua apelação.
+
+  - [bold]Estas regras não são as mesmas de outros servidores e devem ser lidas na íntegra.[/bold]
+  - [textlink="Tipos de Ban e durações" link="RMCBanTypes"]
+
+  ## Regras de Tolerância Zero
+  Você poderá ser banido sem aviso prévio por violar estas regras.
+  - [textlink="Clique aqui para ver as regras de zero tolerancia." link="RMCZeroTolerance"]
+
+  ## Regras Básicas
+  Estas são as regras gerais da CMU. Clique nelas para obter mais informações.
+  - [textlink="1. Este é um servidor em português; por favor, use apenas português." link="RMCLanguage"]
+  - [textlink="2. Não utilize múltiplas contas nem contas secundárias e não compartilhe contas." link="RMCMultikey"]
+  - [textlink="3. Siga as regras de intensificação contra não hostis." link="RMCRulesEscalation"]
+  - [textlink="4. Não utilize informações obtidas fora do conhecimento do seu personagem." link="RMCMetaknowledge"]
+  - [textlink="5. Não provoque sua equipe nem perturbe outros jogadores." link="RMCKindness"]
+  - [textlink="6. Não abandone um cargo de comando sem aviso prévio." link="RMCCommandRoles"]
+  - [textlink="7. Motins, tumultos e atividades semelhantes contra a sua facção exigem permissão de admin." link="RMCMutinies"]
+  - 8. Não desconecte se não conseguir a função/kit que deseja, seja agradavel.
+  - 9. Siga as regras e normas de roleplay do servidor (Descritas na parte inferior desta página)
+
+  ## Comando
+  Estas regras também se aplicam a qualquer indivíduo que seja promovido ou que esteja atuando no lugar de um cargo de Comando. [itálico]Os cargos de Comando são definidos como: todos os cargos militares acima do posto de segundo-tenente ou equivalente, equipe de comando e controle e cargos que assumem automaticamente a posição de comando mais alta no início da rodada, quando todos os cargos estão presentes.[/itálico]
+  - [textlink="1. O Comando Militar deve seguir o UCMJ." link="RMCMarineLaw"]
+  - [textlink="2. Os jogadores do Commando são submetidos a um padrão de jogo mais elevado. " link="RMCHigherStandards"]
+
+  ## Regras e Padrões de Roleplay
 
   - [textlink="1. General Roleplay Standards." link="RMCGeneralRoleplayStandards"]
   - [textlink="2. Character Names." link="RMCCharacterNames"]
