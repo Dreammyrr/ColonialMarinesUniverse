@@ -41,8 +41,8 @@
       prefix: au14-job-prefix-govforplatop
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: so
   hidden: false
 
 - type: startingGear

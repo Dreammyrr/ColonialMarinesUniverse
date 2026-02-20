@@ -91,7 +91,8 @@ public sealed class MarineAnnounceSystem : SharedMarineAnnounceSystem
         var operation = _distressSignal.OperationName ?? string.Empty;
         var landingZones = new List<LandingZone>();
 
-        foreach (var (id, metaData) in _dropship.GetPrimaryLZCandidates())
+        string? compFaction = string.IsNullOrWhiteSpace(computer.Comp.Faction) ? null : computer.Comp.Faction.ToLowerInvariant();
+        foreach (var (id, metaData) in _dropship.GetPrimaryLZCandidates(compFaction))
         {
             if (!string.IsNullOrWhiteSpace(computer.Comp.Faction))
             {
