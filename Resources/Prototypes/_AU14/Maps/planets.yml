@@ -42,23 +42,23 @@
 
 - type: entity
   id: AUPlanetShepherdsPride
-  name: Shepherd's Pride
+  name: Shepherds' Pride
   components:
   - type: RMCPlanetMapPrototype
-    votename: "Shepherds Pride"
+    votename: "Shepherds' Pride"
     mapId: Sheperds
     camouflage: Desert
     announcement: "A remote research outpost, Shepherd's Pride, has gone silent. The UNS Almayer is dispatched to investigate the mysterious circumstances."
     platoonsOpfor:
     - UPP
-    - WEYU
+    - HAZOPS
     - VAIPO
+    - UNISC
     - ProdigySF
     platoonsGovfor:
     - LACN
-    - UNISC
     - USCM
-    - HAZOPS
+    - WEYU
     - RMC
     defaultgovfor: USCM
     defaultopfor: UPP

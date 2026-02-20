@@ -1,9 +1,10 @@
 - type: job
-  parent: AU14JobSquadRiflemanBase
+  parent: CMJobBase
   id: AU14JobOpforSquadRifleman
   name: au14-job-name-opforsquadrifleman
   description: au14-job-description-opforsquadrifleman
   setPreference: true
+  playTimeTracker: AU14JobGOVFORSquadRifleman
   requirements:
   - !type:TraitsRequirement
     inverted: true
@@ -40,8 +41,8 @@
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
-  hidden: true
+        state: private
+  hidden: false
 
 - type: startingGear
   id: AU14GearopforSquadRifleman

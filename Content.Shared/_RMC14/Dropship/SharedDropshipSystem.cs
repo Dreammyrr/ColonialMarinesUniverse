@@ -700,10 +700,14 @@ public abstract class SharedDropshipSystem : EntitySystem
         return true;
     }
 
-    public IEnumerable<Entity<MetaDataComponent>> GetPrimaryLZCandidates()
+    public IEnumerable<Entity<MetaDataComponent>> GetPrimaryLZCandidates(string? faction = null)
     {
-        // Only block candidates when a global primary exists.
+        // If a global primary exists no candidates should be shown.
         if (PrimaryExistsForFaction(null))
+            yield break;
+
+        // If a primary exists for the caller's faction, don't show candidates to that faction either.
+        if (!string.IsNullOrWhiteSpace(faction) && PrimaryExistsForFaction(faction))
             yield break;
 
         var landingZoneQuery = EntityQueryEnumerator<DropshipDestinationComponent, MetaDataComponent, TransformComponent>();

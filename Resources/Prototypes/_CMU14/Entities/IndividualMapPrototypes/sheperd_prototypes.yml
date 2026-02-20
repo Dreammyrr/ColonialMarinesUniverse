@@ -1,0 +1,17 @@
+- type: entity
+  parent: MarkerBase
+  id: CMUShepSpawnerLZ4
+  name: LZ4 - Hidden LZ Spawner
+  components:
+  - type: TimedDespawn
+    lifetime: 300
+  - type: SpawnOnTerminate
+    spawn: CMUShepDropshipDestinationOpforLZ4
+  - type: Sprite
+    state: green
+
+- type: entity
+  parent: CMDropshipDestinationOpforWhitelist
+  id: CMUShepDropshipDestinationOpforLZ4
+  name: LZ4 - Hidden LZ
+  categories: [ HideSpawnMenu ]

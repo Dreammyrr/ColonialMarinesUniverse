@@ -1,7 +1,7 @@
 - type: job
-  parent: AU14JobDSPilotBase
+  parent: CMJobBase
   id: AU14JobOpforDSPilot
-  name: TEST OPFOR DS
+  name: au14-job-name-opfordspilot
   description: au14-job-description-opfordspilot
   setPreference: true
   canBeAntag: false
@@ -15,6 +15,7 @@
     - FrontalLisp
     - NonResuscitable
     - Epilepsy
+  playTimeTracker: AU14JobGOVFORDSPilot
   ranks:
     RMCRankCaptain:
     - !type:RoleTimeRequirement
@@ -51,8 +52,8 @@
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
-  hidden: true
+        state: pilot
+  hidden: false
 
 - type: startingGear
   id: AU14GearopforDSPilot

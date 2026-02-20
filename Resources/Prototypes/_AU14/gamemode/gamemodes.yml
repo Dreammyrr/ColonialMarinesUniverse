@@ -10,7 +10,7 @@
   supportedPlanets:
   #- AUPlanetGixensCaverns Rout of rotation till fixed - eg
   - AUPlanetStableGarrison
-  #- AUPlanetShepherdsPride
+  - AUPlanetShepherdsPride
   - AUPlanetFlight
   - AUPlanetLV759
   - AUPlanetLV327
@@ -54,7 +54,7 @@
   description: Distress Signal
   requiresGovforVote: true
   supportedPlanets:
-  #- AUPlanetShepherdsPride for playtest - eg
+  - AUPlanetShepherdsPride
   - AUPlanetLV747
   - AUPlanetFlight
   - AUPlanetLV327

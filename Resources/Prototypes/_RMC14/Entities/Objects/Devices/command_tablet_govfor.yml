@@ -11,4 +11,6 @@
     canGiveMedals: true
     canInitiateEvac: true
     faction: govfor
+  - type: TacticalMapComputer
+    faction: govfor
 

@@ -1,5 +1,5 @@
 - type: job
-  parent: AU14JobDCCBase
+  parent: CMJobBase
   id: AU14JobGOVFORDCC
   name: au14-job-name-govfordcc
   description: au14-job-description-govfordcc
@@ -11,6 +11,7 @@
     traits:
     - Epilepsy
     - NonResuscitable
+  playTimeTracker: AU14JobGOVFORDCC
   ranks:
     AU14RankUSASFCMSgt:
     - !type:RoleTimeRequirement
@@ -51,8 +52,8 @@
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
-  hidden: true
+        state: dcc
+  hidden: false
 
 - type: startingGear
   id: AU14GearGOVFORDCC
@@ -68,6 +69,10 @@
     job_id: AU14JobGOVFORDCC
   - type: Sprite
     state: syn_spawn
+
+- type: playTimeTracker
+  id: AU14JobGOVFORDCC
+  isHumanoid: true
 
 - type: startingGear
   id: AU14GearGOVFORDCCDummy

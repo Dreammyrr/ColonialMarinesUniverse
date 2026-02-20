@@ -1,5 +1,5 @@
 - type: job
-  parent: AU14JobDSPilotBase
+  parent: CMJobBase
   id: AU14JobGOVFORDSPilot
   name: au14-job-name-govfordspilot
   description: au14-job-description-govfordspilot
@@ -15,6 +15,7 @@
     - FrontalLisp
     - NonResuscitable
     - Epilepsy
+  playTimeTracker: AU14JobGOVFORDSPilot
   ranks:
     RMCRankCaptain:
     - !type:RoleTimeRequirement
@@ -50,9 +51,9 @@
       prefix: au14-job-prefix-govfordspilot
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
-  hidden: true
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: pilot
+  hidden: false
 
 - type: startingGear
   id: AU14GearGOVFORDSPilot
@@ -68,6 +69,10 @@
     job_id: AU14JobGOVFORDSPilot
   - type: Sprite
     state: syn_spawn
+
+- type: playTimeTracker
+  id: AU14JobGOVFORDSPilot
+  isHumanoid: true
 
 - type: startingGear
   id: AU14GearGOVFORDSPilotDummy

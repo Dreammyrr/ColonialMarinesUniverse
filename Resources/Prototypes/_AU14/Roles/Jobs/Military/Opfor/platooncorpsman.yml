@@ -1,9 +1,10 @@
 - type: job
-  parent: AU14JobPlatoonCorpsmanBase
+  parent: CMJobBase
   id: AU14JobOpforPlatoonCorpsman
   name: au14-job-name-opforplatooncorpsman
   description: au14-job-description-opforplatooncorpsman
   setPreference: true
+  playTimeTracker: AU14JobGOVFORPlatoonCorpsman
   requirements:
   - !type:TraitsRequirement
     inverted: true
@@ -38,8 +39,8 @@
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
-  hidden: true
+        state: medic
+  hidden: false
 
 - type: startingGear
   id: AU14GearopforPlatoonCorpsman
