@@ -7,6 +7,12 @@
   hidden: false
   supervisors: nobody
   jobPreviewEntity: RMCPlayerXenoQueenPreview
+    requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5 hours
+  - !type:RoleTimeRequirement
+    role: AU14JobThreatMember
+    time: 7200 # 2 hours
   accessGroups:
   - CMAccessXeno
   - CMAccessXenoQueen
