@@ -18,6 +18,12 @@
     },
     {
       "name": "background_bravo"
+    },    {
+      "name": "background_sierra"
+    },    {
+      "name": "background_tango"
+    },    {
+      "name": "background_uniform"
     },
     {
       "name": "background_alpha"
@@ -658,6 +664,10 @@
     {
       "name": "spp_co"
     },
+      {
+          "name": "enemy_blip"
+
+      },
     {
       "name": "spp_xo"
     },

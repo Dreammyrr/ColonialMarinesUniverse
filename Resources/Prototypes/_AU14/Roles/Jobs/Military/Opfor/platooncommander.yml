@@ -1,10 +1,11 @@
 - type: job
-  parent: AU14JobPlatCoBase
+  parent: CMJobBase
   id: AU14JobOpforPlatCo
   name: au14-job-name-opforplatco
   description: au14-job-description-opforplatco
   setPreference: true
   canBeAntag: false
+  playTimeTracker: AU14JobGOVFORPlatCo
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 18000 # 5 hours
@@ -37,7 +38,6 @@
   - !type:AddComponentSpecial
     components:
     - type: CommendationGiver
-    - type: InnateCommandSpeech
     - type: NpcFactionMember
       factions:
       - OPFOR
@@ -50,8 +50,8 @@
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
-  hidden: true
+        state: co
+  hidden: false
 
 - type: startingGear
   id: AU14GearopforPlatCo

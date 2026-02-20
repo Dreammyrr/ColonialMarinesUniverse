@@ -4,6 +4,7 @@
   id: CMJobBase
   isCM: true
   canBeAntag: true
+  joinNotifyCrew: false
   medals:
     Bronze: RMCMedalBronzeService
     Silver: RMCMedalSilverService

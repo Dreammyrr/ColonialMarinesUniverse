@@ -46,7 +46,7 @@
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
+        state: tl
     - type: MarineOrders
   hidden: true
 

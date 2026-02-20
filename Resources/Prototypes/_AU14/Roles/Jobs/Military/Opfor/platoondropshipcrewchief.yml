@@ -1,5 +1,5 @@
 - type: job
-  parent: AU14JobDCCBase
+  parent: CMJobBase
   id: AU14JobOpforDCC
   name: au14-job-name-opfordcc
   description: au14-job-description-opfordcc
@@ -10,6 +10,7 @@
     traits:
     - Epilepsy
     - NonResuscitable
+  playTimeTracker: AU14JobGOVFORDCC
   ranks:
     AU14RankUSASFCMSgt:
     - !type:RoleTimeRequirement
@@ -50,8 +51,8 @@
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
-  hidden: true
+        state: dcc
+  hidden: false
 
 - type: startingGear
   id: AU14GearopforDCC

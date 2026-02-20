@@ -1,5 +1,5 @@
 - type: job
-  parent: AU14JobPlatOpBase
+  parent: CMJobBase
   id: AU14JobGOVFORPlatOp
   name: au14-job-name-govforplatop
   description: au14-job-description-govforplatop
@@ -15,6 +15,7 @@
     - FrontalLisp
     - NonResuscitable
     - Epilepsy
+  playTimeTracker: AU14JobGOVFORPlatOp
   ranks:
     RMCRankSecondLT: []
   startingGear: AU14GearGOVFORPlatOp
@@ -40,9 +41,9 @@
       prefix: au14-job-prefix-govforplatop
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
-  hidden: true
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
+        state: so
+  hidden: false
 
 - type: startingGear
   id: AU14GearGOVFORPlatOp
@@ -58,6 +59,10 @@
     job_id: AU14JobGOVFORPlatOp
   - type: Sprite
     state: syn_spawn
+
+- type: playTimeTracker
+  id: AU14JobGOVFORPlatOp
+  isHumanoid: true
 
 - type: startingGear
   id: AU14GearGOVFORPlatOpDummy

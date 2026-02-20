@@ -40,7 +40,7 @@
     - type: TacticalMapIcon
       icon:
         sprite: _RMC14/Interface/map_blips.rsi
-        state: synth
+        state: leader
     - type: MarineOrders
   hidden: true
 
@@ -59,7 +59,7 @@
     job_id: AU14JobOpforSquadSergeant
   - type: Sprite
     state: syn_spawn
-    
+
 - type: startingGear
   id: AU14GearopforSquadSergantDummy
   equipment:

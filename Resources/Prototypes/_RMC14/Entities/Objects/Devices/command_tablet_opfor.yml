@@ -11,4 +11,5 @@
     canGiveMedals: true
     canInitiateEvac: true
     faction: opfor
-
+  - type: TacticalMapComputer
+    faction: opfor

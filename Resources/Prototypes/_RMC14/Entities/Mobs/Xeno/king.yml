@@ -21,7 +21,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      1500: Critical
+      800: Critical
       1600: Dead
   - type: Tag
     tags:
