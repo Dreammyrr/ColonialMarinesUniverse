@@ -27,6 +27,7 @@
   requireAdminNotify: false
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-opforplatco
+  whitelisted: true
   accessGroups:
   - AU14OpforCommand
   - CMCargoTech
