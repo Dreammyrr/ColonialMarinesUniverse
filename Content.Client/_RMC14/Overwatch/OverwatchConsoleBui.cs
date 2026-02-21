@@ -232,6 +232,9 @@ public sealed class OverwatchConsoleBui : RMCPopOutBui<OverwatchConsoleWindow>
                     window.OpenCentered();
                 };
 
+                monitor.FireteamsButton.OnPressed += _ =>
+                    SendPredictedMessage(new OverwatchConsoleOpenSquadFireteamsBuiMsg(squad.Id));
+
                 var canSupplyDrop = EntMan.HasComponent<SupplyDropComputerComponent>(Owner) && squad.CanSupplyDrop;
                 TabContainer.SetTabVisible(monitor.SupplyDrop, canSupplyDrop);
 
@@ -253,6 +256,8 @@ public sealed class OverwatchConsoleBui : RMCPopOutBui<OverwatchConsoleWindow>
             monitor.OverwatchLabel.Text = $"{squad.Name} Overwatch | Dashboard";
 
             monitor.OnStop += () => SendPredictedMessage(new OverwatchConsoleStopOverwatchBuiMsg());
+
+            // Fireteams are handled by the SquadInfo UI (opened by Overwatch) so we don't populate them locally here.
 
             var allAlive = 0;
             var roles = new Dictionary<ProtoId<JobPrototype>, (HashSet<OverwatchMarine> Deployed, HashSet<OverwatchMarine> Alive, HashSet<OverwatchMarine> All)>();
@@ -477,7 +482,7 @@ public sealed class OverwatchConsoleBui : RMCPopOutBui<OverwatchConsoleWindow>
                 else
                 {
                     row.Buttons.Hide.Text = "-";
-                    row.Buttons.Hide.ModulateSelfOverride = Color.FromHex("#BB1F1D");
+                    row.Buttons.Hide.ModulateSelfOverride = Color.FromHex("#BB1D1D");
                     row.Buttons.Hide.ToolTip = "Hide marine";
                 }
 

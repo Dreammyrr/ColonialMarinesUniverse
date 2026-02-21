@@ -23,7 +23,7 @@
   accessGroups:
   - AU14OpforFTL
   overwatchSortPriority: -5
-  overwatchRoleName: Squad Sergeant
+  overwatchRoleName: Squad Leader
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial
@@ -39,7 +39,7 @@
       prefix: au14-job-prefix-opforsquadsergeant
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: leader
     - type: MarineOrders
   hidden: true

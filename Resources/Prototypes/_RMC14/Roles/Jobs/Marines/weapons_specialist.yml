@@ -24,9 +24,9 @@
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - WeaponSpec
-  overwatchSortPriority: -4
-  overwatchShowName: true
-  overwatchRoleName: Specialist
+  #overwatchSortPriority: -4
+  #overwatchShowName: true
+#  overwatchRoleName: Specialist
   roleWeight: 1
   displayWeight: 4
   special:

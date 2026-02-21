@@ -583,7 +583,7 @@
             state: cryotroops
         - name: LACN Commandos Scout Team
           description: Summon an LACN Commandos Scout Team.
-          cost: 2
+          cost: 8
           repurchasable: false
           events:
           - !type:TechPartySpawnEvent

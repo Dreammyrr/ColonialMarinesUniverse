@@ -1,5 +1,5 @@
 - type: job
-  parent: CMJobBase
+  parent: AU14JobSquadRiflemanBase
   id: AU14JobGOVFORSquadRifleman
   name: au14-job-name-govforsquadrifleman
   description: au14-job-description-govforsquadrifleman
@@ -40,7 +40,7 @@
       prefix: au14-job-prefix-govforsquadrifleman
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: private
   hidden: false
 

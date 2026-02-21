@@ -52,7 +52,6 @@ public sealed partial class SquadTeamComponent : Component
     public List<SquadArmorLayers> BlacklistedSquadArmor = new();
 
     [DataField]
-    [Access(typeof(SquadLeaderTrackerSystem))]
     public FireteamData Fireteams = new();
 
     [DataField]

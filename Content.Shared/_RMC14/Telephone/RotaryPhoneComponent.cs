@@ -69,6 +69,12 @@ public sealed partial class RotaryPhoneComponent : Component
 
     [DataField]
     public string Faction = string.Empty;
+
+    /// <summary>
+    /// If true, this phone can be called by any caller regardless of faction.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool CallableByAll;
     /// <summary>
     /// Should admins be notified when being called.
     /// </summary>

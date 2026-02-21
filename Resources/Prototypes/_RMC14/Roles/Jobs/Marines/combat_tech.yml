@@ -27,8 +27,8 @@
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - CombatTech
-  overwatchSortPriority: -1
-  overwatchRoleName: Combat Technicians
+ # overwatchSortPriority: -1
+ # overwatchRoleName: Combat Technicians
   roleWeight: 1
   displayWeight: 1
   special:
