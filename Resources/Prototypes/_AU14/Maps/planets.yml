@@ -95,12 +95,10 @@
     announcement: "A remote research outpost, Shepherd's Pride, has gone silent. The UNS Almayer is dispatched to investigate the mysterious circumstances."
     platoonsOpfor:
     - UPP
-    - WEYU
     - VAIPO
     - ProdigySF
     platoonsGovfor:
-    - LACN
-    - CMBCIU
+    - WEYU
     - USCM
     - RMC
     defaultgovfor: USCM
