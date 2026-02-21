@@ -50,7 +50,7 @@
       prefix: au14-job-prefix-govforplatco
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: co
   hidden: false
 
@@ -71,9 +71,6 @@
   - type: Sprite
     state: syn_spawn
 
-- type: playTimeTracker
-  id: AU14JobGOVFORPlatCo
-  isHumanoid: true
 
 - type: startingGear
   id: AU14GearGOVFORPlatCoDummy

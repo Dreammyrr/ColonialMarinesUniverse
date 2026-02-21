@@ -51,7 +51,7 @@
       prefix: au14-job-prefix-govfordcc
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: dcc
   hidden: false
 
@@ -70,9 +70,6 @@
   - type: Sprite
     state: syn_spawn
 
-- type: playTimeTracker
-  id: AU14JobGOVFORDCC
-  isHumanoid: true
 
 - type: startingGear
   id: AU14GearGOVFORDCCDummy

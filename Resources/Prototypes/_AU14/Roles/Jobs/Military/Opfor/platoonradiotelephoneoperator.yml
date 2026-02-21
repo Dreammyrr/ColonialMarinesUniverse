@@ -28,8 +28,8 @@
   supervisors: au14-job-supervisors-opfor
   accessGroups:
   - AU14OpforFTL
-  overwatchSortPriority: -5
-  overwatchRoleName: Radio Telephone Operator
+  overwatchSortPriority: -3
+  overwatchRoleName: Fire Team Leaders
   roleWeight: 0.25
   special:
   - !type:AddComponentSpecial
@@ -45,10 +45,10 @@
       prefix: au14-job-prefix-radiotelephoneoperator
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: tl
     - type: MarineOrders
-  hidden: true
+  hidden: false
 
 - type: startingGear
   id: AU14GearopforRadioTelephoneOperator

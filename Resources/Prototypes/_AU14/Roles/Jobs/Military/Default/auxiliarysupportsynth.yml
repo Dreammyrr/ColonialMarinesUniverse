@@ -46,7 +46,7 @@
       prefix: au14-job-prefix-govforauxsupportsynth
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: synth
     - type: MeleeWeapon
       soundHit:
@@ -61,7 +61,7 @@
         types:
           Blunt: 35
     - type: Synth
-  hidden: true
+  hidden: false
 
 - type: startingGear
   id: AU14GearGOVFORAuxSupportSynth

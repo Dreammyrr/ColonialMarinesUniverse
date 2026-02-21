@@ -14,6 +14,8 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Shared._RMC14.Overwatch;
+using Content.Shared.IdentityManagement;
 
 namespace Content.Shared._RMC14.Tracker.SquadLeader;
 
@@ -66,11 +68,15 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
         SubscribeLocalEvent<GrantSquadLeaderTrackerComponent, GotUnequippedEvent>(OnGotUnequipped);
 
         SubscribeLocalEvent<SquadLeaderTrackerComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<SquadLeaderTrackerComponent, BoundUIClosedEvent>(OnTrackerUiClosed);
         SubscribeLocalEvent<SquadLeaderTrackerComponent, ComponentRemove>(OnRemove);
         SubscribeLocalEvent<SquadLeaderTrackerComponent, SquadLeaderTrackerClickedEvent>(OnSquadLeaderTrackerClicked);
         SubscribeLocalEvent<SquadLeaderTrackerComponent, SquadLeaderTrackerChangeModeEvent>(OnSquadLeaderTrackerChangeMode);
         SubscribeLocalEvent<SquadLeaderTrackerComponent, LeaderTrackerSelectTargetEvent>(OnLeaderTrackerSelectTargetEvent);
         SubscribeLocalEvent<SquadLeaderTrackerComponent, GetMarineSquadNameEvent>(OnRoleChange, after: [typeof(SkillPamphletSystem), typeof(VendorRoleOverrideSystem)]);
+
+        // Listen for squad updates so overwatch changes propagate to trackers
+        SubscribeLocalEvent<SquadTeamComponent, SquadMemberUpdatedEvent>(OnSquadMemberUpdatedEvent);
 
         Subs.BuiEvents<SquadLeaderTrackerComponent>(SquadLeaderTrackerUI.Key,
             subs =>
@@ -80,6 +86,7 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
                 subs.Event<SquadLeaderTrackerPromoteFireteamLeaderMsg>(OnPromoteFireteamLeaderMsg);
                 subs.Event<SquadLeaderTrackerDemoteFireteamLeaderMsg>(OnDemoteFireteamLeaderMsg);
                 subs.Event<SquadLeaderTrackerChangeTrackedMsg>(OnChangeTrackedMsg);
+                subs.Event<SquadLeaderTrackerSetFireteamNicknameMsg>(OnSetFireteamNicknameMsg);
             });
 
         // Initialize sawmill for logging
@@ -246,7 +253,7 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
         if (!TryGetEntity(args.Marine, out var marine))
             return;
 
-        if (!CanChangeFireteamMember(args.Actor, marine.Value, true))
+        if (!CanChangeFireteamMember(args.Actor, marine.Value, true, ent.Owner))
             return;
 
         RemoveFireteamMember(ent.Comp.Fireteams, args.Marine);
@@ -271,7 +278,7 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
         if (!TryGetEntity(args.Marine, out var marine))
             return;
 
-        if (!CanChangeFireteamMember(args.Actor, marine.Value, false))
+        if (!CanChangeFireteamMember(args.Actor, marine.Value, false, ent.Owner))
             return;
 
         if (!TryComp(marine.Value, out FireteamMemberComponent? member))
@@ -292,7 +299,7 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
         if (!TryGetEntity(args.Marine, out var marineId))
             return;
 
-        if (!CanChangeFireteamMember(args.Actor, marineId.Value, true))
+        if (!CanChangeFireteamMember(args.Actor, marineId.Value, true, ent.Owner))
             return;
 
         if (!TryComp(marineId, out FireteamMemberComponent? member))
@@ -330,7 +337,7 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
         if (!TryGetEntity(fireteam?.Leader?.Id, out var marineId))
             return;
 
-        if (!CanChangeFireteamMember(args.Actor, marineId.Value, false))
+        if (!CanChangeFireteamMember(args.Actor, marineId.Value, false, ent.Owner))
             return;
 
         DemoteFireteamLeader(fireteam, args.Actor);
@@ -341,7 +348,7 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
 
     private void OnChangeTrackedMsg(Entity<SquadLeaderTrackerComponent> ent, ref SquadLeaderTrackerChangeTrackedMsg args)
     {
-        var options = new List<DialogOption> { };
+        var options = new List<DialogOption>();
 
         foreach (var mode in ent.Comp.TrackerModes)
         {
@@ -359,18 +366,151 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
         );
     }
 
-    private bool CanChangeFireteamMember(EntityUid user, EntityUid target, bool add)
+    private void OnSetFireteamNicknameMsg(Entity<SquadLeaderTrackerComponent> ent, ref SquadLeaderTrackerSetFireteamNicknameMsg args)
     {
-        if (!HasComp<SquadLeaderComponent>(user))
-            return false;
+        if (_net.IsClient)
+            return;
 
-        if (!_squad.AreInSameSquad(user, target))
-            return false;
+        // Diagnostic logging to help trace who is attempting to set a nickname and why it may be rejected.
+        Log.Debug($"OnSetFireteamNicknameMsg called: TrackerOwner={ent.Owner} Index={args.Index} Nick='{args.Nickname}' Actor={args.Actor}");
 
-        if (add && HasComp<SquadLeaderComponent>(target))
-            return false;
+        if (args.Index < 0 || args.Index >= ent.Comp.Fireteams.Fireteams.Length)
+            return;
 
-        return true;
+        // Resolve squad for this tracker owner
+        if (!_squad.TryGetMemberSquad(ent.Owner, out var squad))
+            return;
+
+        // Permission: allow if sender is the squad's leader (matches recorded SquadLeaderId) or has the SquadLeaderComponent,
+        // or is an overwatch operator for this squad.
+        var senderUid = args.Actor;
+
+        // args.Actor is an EntityUid on the server; check if they have the SquadLeaderComponent or match the recorded SquadLeaderId
+        var isSquadLeader = HasComp<SquadLeaderComponent>(senderUid);
+        if (!isSquadLeader)
+        {
+            if (squad.Comp.Fireteams.SquadLeaderId != null && squad.Comp.Fireteams.SquadLeaderId == GetNetEntity(senderUid))
+                isSquadLeader = true;
+        }
+
+        var isOverwatchOperator = false;
+        var consoles = EntityQueryEnumerator<OverwatchConsoleComponent>();
+        var actorNet = GetNetEntity(senderUid);
+        while (consoles.MoveNext(out var _, out var console))
+        {
+            if (console.Squad == GetNetEntity(squad) &&
+                console.Operator == Identity.Name(senderUid, EntityManager))
+            {
+                isOverwatchOperator = true;
+                break;
+            }
+        }
+
+        // Also allow if this tracker component was marked when Overwatch opened the SquadInfo UI.
+        if (!isOverwatchOperator && ent.Comp.TemporaryOverwatchEditors.Contains(actorNet))
+            isOverwatchOperator = true;
+
+        Log.Debug($"OnSetFireteamNicknameMsg permission: isSquadLeader={isSquadLeader} isOverwatchOperator={isOverwatchOperator}");
+
+        if (!isSquadLeader && !isOverwatchOperator)
+            return;
+
+        var fireteams = squad.Comp.Fireteams;
+        var ft = fireteams.Fireteams[args.Index] ?? new SquadLeaderTrackerFireteam();
+
+        var nickname = args.Nickname.Trim();
+        if (string.IsNullOrEmpty(nickname))
+        {
+            nickname = null;
+        }
+        const int maxLen = 64;
+        if (nickname != null && nickname.Length > maxLen)
+        {
+            nickname = nickname.Substring(0, maxLen);
+        }
+
+        ft.Nickname = nickname;
+        fireteams.Fireteams[args.Index] = ft;
+
+        squad.Comp.Fireteams = fireteams;
+        Dirty(squad.Owner, squad.Comp);
+
+        // Broadcast changes back to the squad entity so SquadTeamComponent subscribers receive it
+        var ev = new SquadMemberUpdatedEvent(squad.Owner);
+        RaiseLocalEvent(squad.Owner, ref ev);
+    }
+
+    private bool CanChangeFireteamMember(EntityUid user, EntityUid target, bool add, EntityUid? trackerOwner = null)
+    {
+        // Allow direct squad leaders immediately.
+        if (HasComp<SquadLeaderComponent>(user))
+        {
+            if (!_squad.AreInSameSquad(user, target))
+                return false;
+
+            if (add && HasComp<SquadLeaderComponent>(target))
+                return false;
+
+            return true;
+        }
+
+        // If the caller provided the tracker entity, consult its TemporaryOverwatchEditors set.
+        if (trackerOwner != null && TryComp<SquadLeaderTrackerComponent>(trackerOwner.Value, out var trackerComp))
+        {
+            var actorNet = GetNetEntity(user);
+            if (trackerComp.TemporaryOverwatchEditors.Contains(actorNet))
+            {
+                // Ensure the target is in the same squad as the tracker owner (safety check).
+                if (!_squad.TryGetMemberSquad(target, out var targetSquad))
+                    return false;
+
+                if (!_squad.TryGetMemberSquad(trackerOwner.Value, out var trackerSquad))
+                    return false;
+
+                if (targetSquad.Owner != trackerSquad.Owner)
+                    return false;
+
+                if (add && HasComp<SquadLeaderComponent>(target))
+                    return false;
+
+                return true;
+            }
+
+            // If the temp editor set did not contain the actor, also allow if the actor matches an Overwatch console
+            // operator assigned to this squad. This mirrors the nickname-edit permission checks and gives consoles
+            // the same editing privileges.
+            if (!_squad.TryGetMemberSquad(trackerOwner.Value, out var trackerSquadForConsoleCheck))
+                return false;
+
+            var actorName = Identity.Name(user, EntityManager);
+            var consoles = EntityQueryEnumerator<OverwatchConsoleComponent>();
+            while (consoles.MoveNext(out var _, out var console))
+            {
+                if (console.Squad == null)
+                    continue;
+
+                if (console.Squad != GetNetEntity(trackerSquadForConsoleCheck))
+                    continue;
+
+                if (console.Operator == actorName)
+                {
+                    // Ensure the target is in the same squad as the tracker owner (safety check).
+                    if (!_squad.TryGetMemberSquad(target, out var targetSquad2))
+                        return false;
+
+                    if (targetSquad2.Owner != trackerSquadForConsoleCheck.Owner)
+                        return false;
+
+                    if (add && HasComp<SquadLeaderComponent>(target))
+                        return false;
+
+                    return true;
+                }
+            }
+        }
+
+        // Fall back to denying permission.
+        return false;
     }
 
     private void SyncMemberFireteams(Entity<SquadMemberComponent?> member)
@@ -428,7 +568,7 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
             {
                 if (fireteam.Leader != null)
                 {
-                    if (TryGetEntity(fireteam?.Leader?.Id, out var fireteamLeaderUid))
+                    if (TryGetEntity(fireteam.Leader?.Id, out var fireteamLeaderUid))
                     {
                         if (fireteamLeaderUid != member)
                         {
@@ -698,7 +838,7 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
                 else
                 {
                     var coords = _transform.GetMapCoordinates(buddy);
-                    UpdateDirection((uid, tracker), coords, "");
+                    UpdateDirection((uid, tracker), coords);
                     continue;
                 }
             }
@@ -778,6 +918,49 @@ public sealed class SquadLeaderTrackerSystem : EntitySystem
         var nameB = Name(b);
 
         _sawmill.Info("Set battle buddies: {0} <-> {1}", nameA, nameB);
+    }
+
+    // Handle squad updates (e.g., fireteam nickname changes) and push those changes to any
+    // SquadLeaderTrackerComponent instances so clients see the updates immediately.
+    private void OnSquadMemberUpdatedEvent(Entity<SquadTeamComponent> ent, ref SquadMemberUpdatedEvent args)
+    {
+        // Only run server-side.
+        if (_net.IsClient)
+            return;
+
+        // Update the squad leader's tracker if present.
+        if (_squad.TryGetSquadLeader((ent.Owner, ent.Comp), out var leader))
+        {
+            if (TryComp(leader, out SquadLeaderTrackerComponent? leaderTracker))
+            {
+                leaderTracker.Fireteams = ent.Comp.Fireteams;
+                Dirty(leader, leaderTracker);
+            }
+        }
+
+        // Update any member-held trackers so squad members see the change if they have a tracker.
+        foreach (var member in ent.Comp.Members)
+        {
+            if (TryComp(member, out SquadLeaderTrackerComponent? memberTracker))
+            {
+                memberTracker.Fireteams = ent.Comp.Fireteams;
+                Dirty(member, memberTracker);
+            }
+        }
+    }
+
+    private void OnTrackerUiClosed(EntityUid uid, SquadLeaderTrackerComponent component, BoundUIClosedEvent args)
+    {
+        // Only care about the SquadInfo UI
+        if (!Equals(args.UiKey, SquadLeaderTrackerUI.Key))
+            return;
+
+        // Remove the actor from the temporary overwatch editors set if present
+        var actorNet = GetNetEntity(args.Actor);
+        if (component.TemporaryOverwatchEditors.Remove(actorNet))
+        {
+            Dirty(uid, component);
+        }
     }
 }
 [ByRefEvent]

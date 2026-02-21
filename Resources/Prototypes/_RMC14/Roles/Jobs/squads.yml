@@ -337,7 +337,7 @@
     radio: opfor
     group: OPFOR
     minimapBackground:
-      sprite: _RMC14/Interface/map_blips.rsi
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: background_sierra
     leaderIcon:
       sprite: _RMC14/Interface/cm_job_icons.rsi
@@ -407,7 +407,7 @@
     radio: MarineAlpha
     group: GOVFOR
     minimapBackground:
-      sprite: _RMC14/Interface/map_blips.rsi
+      sprite: /Textures/_RMC14/Interface/map_blips.rsi
       state: background_alpha
     leaderIcon:
       sprite: _RMC14/Interface/cm_job_icons.rsi

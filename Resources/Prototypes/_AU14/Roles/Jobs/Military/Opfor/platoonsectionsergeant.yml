@@ -49,10 +49,10 @@
       prefix: au14-job-prefix-opforSSG
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: leader
     - type: MarineOrders
-  hidden: true
+  hidden: false
 
 - type: startingGear
   id: AU14GearopforSectionSergeant
