@@ -7,7 +7,7 @@
   whitelistedgamemodes:
       - DistressSignal
   winconditions:
-  - KillAllColonistRule
+  - KillAllGovforRule
 
 - type: partySpawn
   id: XenoThreatSpawns
