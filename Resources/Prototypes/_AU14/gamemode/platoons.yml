@@ -385,18 +385,18 @@
     combattech: AU14RMCComtechGearVendor
     ExtraVendor1: VMarkerOpforDeco5
     Deco1: VMarkerOpforDeco5
-  jobClassOverride:
-    SquadRifleman: AU14JobGOVFORSquadRiflemanRMC
-    SectionSergeant: AU14JobGOVFORSectionSergeantRMC
-    PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanRMC
-    PlatCo: AU14JobGOVFORPlatCoRMC
-    SquadSergeant: AU14JobGOVFORSquadSergeantRMC
-    DSPilot: AU14JobGOVFORDSPilotRMC
-    SquadAutomaticRifleman: AU14JobGOVFORSquadAutomaticRiflemanRMC
-    RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorRMC
-    PlatOp: AU14JobGOVFORPlatOpRMC
-    DCC: AU14JobGOVFORDCCRMC
-    SupportSynth: AU14JobGOVFORAuxSupportSynthRMC
+  #jobClassOverride:
+   # SquadRifleman: AU14JobGOVFORSquadRiflemanRMC
+   # SectionSergeant: AU14JobGOVFORSectionSergeantRMC
+   # PlatoonCorpsman: AU14JobGOVFORPlatoonCorpsmanRMC
+   # PlatCo: AU14JobGOVFORPlatCoRMC
+   # SquadSergeant: AU14JobGOVFORSquadSergeantRMC
+   # DSPilot: AU14JobGOVFORDSPilotRMC
+   # SquadAutomaticRifleman: AU14JobGOVFORSquadAutomaticRiflemanRMC
+   # RadioTelephoneOperator: AU14JobGOVFORRadioTelephoneOperatorRMC
+   # PlatOp: AU14JobGOVFORPlatOpRMC
+   # DCC: AU14JobGOVFORDCCRMC
+   # SupportSynth: AU14JobGOVFORAuxSupportSynthRMC
   CompatibleDropships:
   - /Maps/_CMU14/Shuttles/alamo.yml
   - /Maps/_CMU14/Shuttles/normandy.yml
