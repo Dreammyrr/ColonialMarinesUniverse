@@ -725,6 +725,16 @@
     minimapColor: '#714401CC'
 
 - type: entity
+  parent: AU14AreaGarrisonOutdoors
+  id: AU14AreaGarrisonTemp
+  name: Garrison (TEMP)
+  components:
+  - type: Sprite
+    state: colony_int
+  - type: Area
+    minimapColor: '#714401CC'
+
+- type: entity
   parent: AU14AreaGarrisonIndoors
   id: AU14AreaGarrisonSouthDesertTunnel
   name: Southern Desert Tunnel
