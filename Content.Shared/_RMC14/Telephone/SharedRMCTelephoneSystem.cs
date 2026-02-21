@@ -216,11 +216,37 @@ public abstract class SharedRMCTelephoneSystem : EntitySystem
         if (HasComp<RotaryPhoneBackpackComponent>(target) &&
             !TryGetPhoneBackpackHolder(target, out _))
         {
-            // Allow calls to neutral (empty-faction) phones even if they're not held/worn.
-            if (!TryComp<RotaryPhoneComponent>(target, out var targetRotary) || !string.IsNullOrEmpty(targetRotary.Faction))
+            // Allow calls to phones marked callable by all regardless of whether they're held/worn.
+            if (TryComp<RotaryPhoneComponent>(target, out var targetRotary) && targetRotary.CallableByAll)
             {
-                _popup.PopupEntity("No transmitters could be located to call!", user, user, PopupType.MediumCaution);
-                return;
+                // allowed
+            }
+            else
+            {
+                // Allow calls to neutral (empty-faction) phones even if they're not held/worn.
+                if (!TryComp<RotaryPhoneComponent>(target, out targetRotary) || !string.IsNullOrEmpty(targetRotary.Faction))
+                {
+                    _popup.PopupEntity("No transmitters could be located to call!", user, user, PopupType.MediumCaution);
+                    return;
+                }
+            }
+        }
+
+        // Server-side permission check: ensure caller is allowed to call this phone.
+        // Allow if target is explicitly callable by all, or the target has no faction (neutral),
+        // or the calling phone's faction matches the target's faction.
+        if (TryComp(target, out RotaryPhoneComponent? targetRotaryCheck))
+        {
+            if (!targetRotaryCheck.CallableByAll)
+            {
+                var callingFaction = ent.Comp.Faction ?? string.Empty;
+                var targetFaction = targetRotaryCheck.Faction ?? string.Empty;
+
+                if (!string.IsNullOrEmpty(targetFaction) && !string.Equals(callingFaction, targetFaction, StringComparison.Ordinal))
+                {
+                    _popup.PopupEntity("You are not authorized to call that phone!", user, user, PopupType.MediumCaution);
+                    return;
+                }
             }
         }
 
@@ -452,6 +478,14 @@ public abstract class SharedRMCTelephoneSystem : EntitySystem
             if (otherId == phone)
                 continue;
 
+            // If the phone is marked callable by all, include it regardless of faction.
+            if (otherComp.CallableByAll)
+            {
+                var name = GetPhoneName((otherId, otherComp));
+                phones.Add(new RMCPhone(GetNetEntity(otherId), otherComp.Category, name));
+                continue;
+            }
+
             // Neutral phones (empty faction) are callable by anyone — always include them
             if (string.IsNullOrEmpty(otherComp.Faction))
             {
@@ -669,4 +703,5 @@ public abstract class SharedRMCTelephoneSystem : EntitySystem
         }
     }
 }
+
 

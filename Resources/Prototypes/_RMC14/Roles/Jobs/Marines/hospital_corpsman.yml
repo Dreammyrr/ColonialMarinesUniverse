@@ -16,8 +16,8 @@
   supervisors: cm-job-supervisors-sl
   accessGroups:
   - HospitalCorpsman
-  overwatchSortPriority: -2
-  overwatchRoleName: Hospital Corpsmen
+  #overwatchSortPriority: -2
+  #overwatchRoleName: Hospital Corpsmen
   roleWeight: 1
   displayWeight: 2
   special:

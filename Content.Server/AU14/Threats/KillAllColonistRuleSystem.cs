@@ -60,12 +60,16 @@ public sealed class KillAllColonistRuleSystem : GameRuleSystem<KillAllColonistRu
 
         if (percentDead >= requiredPercent)
         {
+
+            if (_gameTicker.RunLevel != GameRunLevel.InRound)
+                return;
+
             // End round, threat wins
-            var winMessage = _auRoundSystem._selectedthreat.WinMessage;
+            var winMessage = _auRoundSystem._selectedthreat?.WinMessage;
             if (!string.IsNullOrEmpty(winMessage))
-                _gameTicker.EndRound(winMessage);
+                _gameTicker.EndRound(winMessage!);
             else
-                _gameTicker.EndRound("Threat victory: Required percentage of AUColonists eliminated.");
+                _gameTicker.EndRound("Threat victory: Required percentage of Colonists eliminated.");
         }
     }
 }

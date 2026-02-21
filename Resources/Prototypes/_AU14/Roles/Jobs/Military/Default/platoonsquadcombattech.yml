@@ -4,6 +4,8 @@
   name: au14-job-name-govforsquadcombattech
   description: au14-job-description-govforsquadcombattech
   setPreference: true
+  overwatchSortPriority: -5
+  overwatchRoleName: Combat Technician
   requirements:
   - !type:TraitsRequirement
     inverted: true
@@ -48,7 +50,7 @@
       prefix: au14-job-prefix-govforsquadcombattech
     - type: TacticalMapIcon
       icon:
-        sprite: _RMC14/Interface/map_blips.rsi
+        sprite: /Textures/_RMC14/Interface/map_blips.rsi
         state: engi
     - type: CMVendorUser
       id: AU14JobGOVFORSquadCombatTech

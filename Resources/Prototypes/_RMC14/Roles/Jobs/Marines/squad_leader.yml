@@ -17,8 +17,8 @@
   accessGroups:
   - SquadLeader
   overwatchSortPriority: -6
-  overwatchShowName: true
-  overwatchRoleName: Squad Leader
+  #overwatchShowName: true
+  #overwatchRoleName: Squad Leader
   roleWeight: 1
   displayWeight: 6
   special:
