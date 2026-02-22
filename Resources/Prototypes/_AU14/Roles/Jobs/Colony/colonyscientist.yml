@@ -37,9 +37,9 @@
   id: AU14GearCivilianScientist
   equipment:
     id: AU14IDCardCivilianScientist
-
     jumpsuit: AU14CivilianWorkwearGreen
     shoes: RMCShoesBlack
+    ears: RMCHeadsetDistressPMCPVE
     outerClothing: RMCLabcoatOpened
 
 - type: entity

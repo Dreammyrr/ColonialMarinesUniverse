@@ -47,11 +47,15 @@
 - type: startingGear
   id: AU14GearWYGuard
   equipment:
-    head: RMCHeadCapBureau
-    jumpsuit: CMJumpsuitLiaisonCharcoal
-    belt: CMBeltSecurityMarshalFilled
-    shoes: RMCBootsPMCFilled
     id: AU14IDCardColonyCorporateLiaison
+    outerClothing: RMCOuterClothingExternalWebbingBlack
+    jumpsuit: AU14WYSecurityUniformRig
+    shoes: RMCBootsPMCFilled
+    head: AU14CivBallCapBlack
+    belt: AU14BeltUtilityGeneralBlack
+    back: RMCSatchelLightpackBlack
+    ears: RMCHeadsetDistressPMCPVE
+    suitstorage: RMCBeltHolsterPistolTSE
 
 - type: entity
   parent: CMSpawnPointJobBase

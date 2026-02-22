@@ -145,7 +145,7 @@
 - type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
   id: RMCJumpsuitVeteranPMCCorporate
-  name: We-Ya corporate security uniform
+  name: We-Yu corporate security uniform
   description: An armored uniform worn by We-Yu corporate security members. This variant is commonly worn by what are known as 'goons'.
   components:
   - type: Sprite
@@ -157,7 +157,7 @@
 - type: entity
   parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
   id: RMCJumpsuitVeteranPMCCorporateLead
-  name: We-Ya corporate security uniform
+  name: We-Yu corporate security uniform
   description: An armored uniform worn by We-Yu corporate security members. This variant is commonly worn by the lead of the 'goonsquad', as they are colloquially known.
   components:
   - type: Sprite

@@ -199,3 +199,10 @@
   components:
   - type: WebbingClothing
     startingWebbing: CMWebbingSurgicalGreen
+
+- type: entity
+  parent: RMCJumpsuitVeteranPMCHybrisaLead
+  id: AU14WYSecurityUniformRig
+  components:
+  - type: WebbingClothing
+    startingWebbing: CMWebbingBlack

@@ -9,13 +9,13 @@
   requiresGovforVote: true
   supportedPlanets:
   #- AUPlanetGixensCaverns Rout of rotation till fixed - eg
-  - AUPlanetStableGarrison
   - AUPlanetShepherdsPride
   - AUPlanetFlight
   - AUPlanetLV759
   - AUPlanetLV327
   - AUPlanetCorsatStation
   - AUPlanetSorokyne
+  - AUPlanetStableGarrison
   rules:
   - AuVoteRule
   - PlatoonSpawn
@@ -60,7 +60,7 @@
   - AUPlanetLV327
   - AUPlanetSorokyne
   - AUPlanetCorsatStation
-  # - AUPlanetStableGarrison
+  - AUPlanetStableGarrison
   rules:
   - AuVoteRule
   - PlatoonSpawn
@@ -85,6 +85,7 @@
     - AUPlanetLV624
     - AUPlanetLV327
     - AUPlanetSorokyne
+    - AUPlanetStableGarrison
 
 - type: gamePreset
   id: Jailbreak

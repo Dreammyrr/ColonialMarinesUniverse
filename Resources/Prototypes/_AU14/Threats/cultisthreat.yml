@@ -202,12 +202,21 @@
 
 - type: threat
   id: cultistThreat
-  roundstartspawns: cultistParty
+  roundstartspawns: cultistPartyThreat
   whitelistedgamemodes:
   - ColonyFall
   blacklistedgamemodes:
   - DistressSignal
 
+- type: partySpawn
+  id: cultistPartyThreat
+  leadersToSpawn:
+    CMXenoQueen: 1
+  gruntsToSpawn:
+    cultistJob: 2
+    cultistJobtwo: 1
+  scalewithpop: true
+  spawnTogether: true
 
 - type: partySpawn
   id: cultistParty
@@ -219,6 +228,14 @@
   scalewithpop: true
   spawnTogether: true
 
+- type: partySpawn
+  id: cultistPartyNoQueen
+  leadersToSpawn:
+    cultistJobtwo: 1
+  gruntsToSpawn:
+    cultistJob: 1
+  scalewithpop: true
+  spawnTogether: true
 
 - type: startingGear
   id: CMUGearCultist
@@ -278,11 +295,21 @@
 - type: auThirdParty
   id: cultistThirdParty
   partyspawn: cultistParty
-  entrymethod: shuttle
-  weight:  10
+  entrymethod: ground
+  weight: 3
+  minplayers: 70
+  maxplayers: 200
+  GhostsNeeded: 5
+  roundstart: true
+
+- type: auThirdParty
+  id: cultistThirdPartyNoQueen
+  partyspawn: cultistPartyNoQueen
+  entrymethod: ground
+  weight: 15
   minplayers: 35
-  maxplayers: 100
-  GhostsNeeded: 1
+  maxplayers: 200
+  GhostsNeeded: 3
   roundstart: true
 
 - type: entity

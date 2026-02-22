@@ -54,13 +54,13 @@
     head: CMHeadCapSurgGreen
     shoes: CMBootsBlackFilled
     belt: CMUBeltMedicBagSupportSynth
-    pocket1: AU14PouchGeneralLargeMilDoctorFill
-    pocket2: RMCPouchSyringeFill
-    back: CMSatchelMarine
+    pocket1: AU14PouchFirstResponderFilledMilitaryDoctor
+    pocket2: AU14PouchAutoinjectorFilledMilitaryDoctor
+    back: AU14SatchelMilitaryDoctor
     outerClothing: RMCLabcoat
-    ears: AU14HeadsetSectionOpforAux
+    ears: AU14HeadsetGOVFORAux
     ears2: RMCFlashlightPen
-    id: AU14IDCardOPFORDoctor
+    id: AU14IDCardGOVFORDoctor
     neck: ClothingNeckStethoscope
     eyes: RMCGlassesMedicalHUDGlasses
   inhand:

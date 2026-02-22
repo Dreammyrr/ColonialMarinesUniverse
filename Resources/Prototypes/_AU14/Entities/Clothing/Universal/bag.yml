@@ -56,6 +56,20 @@
 
 - type: entity
   parent: CMSatchelMarine
+  id: AU14SatchelMilitaryDoctor
+  suffix: Filled, Military Doctor
+  components:
+  - type: StorageFill
+    contents:
+    - id: RMCPortableDialysis
+    - id: CMMaskSterile
+    - id: CMBodyBagFolded
+    - id: CMBodyBagFolded
+    - id: CMBodyBagFolded
+
+
+- type: entity
+  parent: CMSatchelMarine
   id: AU14SatchelMarineIntelBlack
   name: lightweight expedition pack
   suffix: Black, AU14

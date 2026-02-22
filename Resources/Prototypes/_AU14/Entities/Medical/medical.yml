@@ -462,8 +462,13 @@
     noWoundsOnUserPopup: cm-wounds-already-treated-self-popup
     noWoundsOnTargetPopup: cm-wounds-already-treated-target-popup
   - type: MedicallyUnskilledDoAfter
-    min: 5
-    doAfter: 8
+    min: 1
+    doAfter: 7
+  - type: Stack
+    stackType: CMGauze
+    count: 6
+  - type: StackPrice
+    price: 6
 
 #tourniquet
 
@@ -507,5 +512,5 @@
     noWoundsOnUserPopup: cm-wounds-already-treated-self-popup
     noWoundsOnTargetPopup: cm-wounds-already-treated-target-popup
   - type: MedicallyUnskilledDoAfter
-    min: 3
-    doAfter: 4
+    min: 1
+    doAfter: 1

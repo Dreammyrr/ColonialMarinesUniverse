@@ -11,27 +11,23 @@
     - name: Clothes
       takeAll: CMUCMBEssentialEquipmentClothes
       entries:
-      - id: CMJumpsuitLiaisonCharcoal
-      - id: AU14WYPMCFatigues
-      - id: RMCHeadCapBureau
-      - id: AU14WYPMCHelmet
-      - id: AU14HelmetGarbRiotVisor
-      - id: RMCBootsCorporate
+      - id: RMCJumpsuitVeteranPMCHybrisaLead
+      - id: RMCOuterClothingExternalWebbingBlack
+      - id: AU14CivBallCapBlack
       - id: RMCBootsPMCFilled
     - name: Belt
-      takeAll: CMUCMBEssentialEquipmentBelt
+      choices: { CMUCMBDutyBelt: 1 }
       entries:
-      - id: AU14BeltMarineBlack
-      - id: CMBeltSecurityMarshalFilled
-      - id: RMCBeltHolsterPistolTSE
-      - id: AU14BeltHolsterPistolBlack
       - id: RMCBeltSecurityWeYa
       - id: AU14BeltUtilityGeneralBlack
+    - name: Pistol Belt
+      choices: { CMUCMBDutyeltPistol: 1 }
+      entries:
+      - id: RMCBeltHolsterPistolTSE
     - name: Bag
       choices: { CMUCMBDutyStorageBag: 1 }
       entries:
       - id: RMCSatchelLightpackBlack
-      - id: AU14BackpackMarineBlack
     - name: Webbing
       choices: { CMUCMBDutyStorageWebbing: 1 }
       entries:
@@ -43,7 +39,6 @@
     - name: Pouches
       choices: { CMUCMBDutyPouches: 2 }
       entries:
-      - id: RMCPouchFirstAidSplintsGauzeOintment
       #- id: RMCPouchRadio
       - id: RMCPouchGeneralMedium
       - id: RMCPouchPistol
@@ -53,8 +48,10 @@
       takeAll: CMUCMBEssentialEquipment
       entries:
       #- id: RMCRadioHandheldColonyOff
-      - id: RMCHandcuffs
       - id: RMCBinocularsCivPVE
+      - id: RMCHandcuffs
+      - id: RMCHandcuffs
+      - id: RMCHandcuffs
     - name: Duty Weapons
       choices: { CMUCMBDutyWeapons: 1 }
       entries:
