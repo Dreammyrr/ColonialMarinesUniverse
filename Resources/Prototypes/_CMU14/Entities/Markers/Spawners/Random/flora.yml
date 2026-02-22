@@ -82,8 +82,8 @@
   - type: RandomSpawner
     prototypes:
       - RMCFloraTreeConifer01
-      - RMCFloraTreeLargeConifer02
-      - RMCFloraTreeLargeConifer03
+      - RMCFloraTreeConifer02
+      - RMCFloraTreeConifer03
     chance: 0.95
     rarePrototypes:
       - RMCFloraTreeStumpConifer

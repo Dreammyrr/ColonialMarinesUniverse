@@ -51,7 +51,17 @@
     - /Audio/_AU14/Voice/UpdatedVoice/Male/Ryan/Medic/Medic8.ogg
     - /Audio/_AU14/Voice/UpdatedVoice/Male/Ryan/Medic/Medic9.ogg
     - /Audio/_AU14/Voice/UpdatedVoice/Male/Ryan/Medic/Medic10.ogg
-
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Corpsman1.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Corpsman2.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Corpsman3.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Doctor1.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Doctor2.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Doctor3.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Medic1.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Medic2.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Medic3.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Medic4.ogg
+    - /Audio/_AU14/Voice/UpdatedVoice/Male/Dragon-V0942/Medic/Medic5.ogg
 
 - type: soundCollection
   id: AU14FemaleCorpsman

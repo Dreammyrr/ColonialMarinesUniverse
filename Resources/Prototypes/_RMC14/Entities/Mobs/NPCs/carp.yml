@@ -118,3 +118,4 @@
     id: AUSpawnSheperdCarp
     prototypes:
     - AUSheperdCarp
+    ratio: 16
