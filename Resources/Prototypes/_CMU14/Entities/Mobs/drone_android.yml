@@ -22,7 +22,7 @@
     generation: cmu-species-drone-android-generation
     critThreshold: 74
     deadThreshold: 80
-    repairTime: 35
+    repairTime: 10
     selfRepairTime: 9999
     hideGeneration: true
     useHumanHealthIcons: true

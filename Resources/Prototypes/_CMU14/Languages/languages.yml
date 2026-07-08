@@ -1,8 +1,8 @@
 # ├──[ Common tongue ]───────────────────────────────────────────────┤
 - type: language
   id: English
-  name: "English"
-  description: "The standard galactic English language."
+  name: "Inglês"
+  description: "O idioma inglês galáctico padrão."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: GB
@@ -14,8 +14,8 @@
 
 - type: language
   id: Xeno
-  name: "Xenoish"
-  description: "The alien language of the Xenomorphs."
+  name: "Xenoide"
+  description: "A língua alienígena dos Xenomorfos."
   typefaceId: null
   languageIcon:
     sprite: /Textures/_RMC14/Actions/xeno_actions.rsi
@@ -38,8 +38,8 @@
 
 - type: language
   id: Primitive
-  name: "Primitive"
-  description: "A primitive animal language made up of screeches, hoots, and emphatic gestures."
+  name: "Primitivo"
+  description: "Uma linguagem animal primitiva composta por guinchos, gritos e gestos enfáticos."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/Mobs/Animals/monkey.rsi
@@ -52,8 +52,8 @@
 
 - type: language
   id: SignLanguage
-  name: "Sign Language"
-  description: "A visual language using hand gestures and body movements."
+  name: "Língua de Sinais"
+  description: "Uma linguagem visual que utiliza gestos com as mãos e movimentos corporais."
   typefaceId: DefaultItalic
   languageIcon: "/Textures/Interface/Default/Slots/hand_m.png"
   canUseRadio: false
@@ -67,8 +67,8 @@
 
 - type: language
   id: TacticalSignLanguage
-  name: "Tactical Sign Language"
-  description: "A visual language using hand gestures and body movements."
+  name: "Linguagem de Sinais Tática"
+  description: "Uma linguagem visual que utiliza gestos com as mãos e movimentos corporais."
   typefaceId: DefaultItalic
   languageIcon: "/Textures/Interface/Default/Slots/hand_m.png"
   canUseRadio: false
@@ -82,8 +82,8 @@
 
 - type: language
   id: Latin
-  name: "Latin"
-  description: "An ancient Earth language."
+  name: "Latim"
+  description: "Uma língua antiga da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -96,8 +96,8 @@
 
 - type: language
   id: Portuguese
-  name: "Portuguese"
-  description: "An old Earth language."
+  name: "Português"
+  description: "Uma língua antiga da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -109,8 +109,8 @@
 
 - type: language
   id: Spanish
-  name: "Spanish"
-  description: "An old Earth language."
+  name: "Espanhol"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -123,8 +123,8 @@
 
 - type: language
   id: Arabic
-  name: "Arabic"
-  description: "An old Earth language."
+  name: "árabe"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: SA
@@ -135,8 +135,8 @@
 
 - type: language
   id: French
-  name: "French"
-  description: "An old Earth language."
+  name: "Francês"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -149,8 +149,8 @@
 
 - type: language
   id: German
-  name: "German"
-  description: "An old Earth language."
+  name: "Alemão"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -163,8 +163,8 @@
 
 - type: language
   id: Russian
-  name: "Russian"
-  description: "An old Earth language."
+  name: "Russo"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -175,8 +175,8 @@
 
 - type: language
   id: Japanese
-  name: "Japanese"
-  description: "An old Earth language."
+  name: "japonês"
+  description: "Uma antiga língua da Terra."
   typefaceId: NotoSansDisplay
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -190,8 +190,8 @@
 
 - type: language
   id: Mandarin
-  name: "Mandarin"
-  description: "An old Earth language."
+  name: "Mandarim"
+  description: "Uma antiga língua da Terra."
   typefaceId: NotoSansDisplay
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -203,8 +203,8 @@
 
 - type: language
   id: Binary
-  name: "Binary"
-  description: "The machine language of 1s and 0s."
+  name: "Binário"
+  description: "A linguagem de máquina de 1s e 0s."
   expectedVocabularySize: 50
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -217,8 +217,8 @@
 
 - type: language
   id: Legalese
-  name: "Legalese"
-  description: "High-corporate elitist jargon."
+  name: "Termos Jurídicos"
+  description: "Jargão corporativo elitista de alto nível."
   expectedVocabularySize: 90
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -231,7 +231,7 @@
 - type: language
   id: Yautja
   name: "Yautja"
-  description: "An ancient alien language."
+  description: "Uma antiga língua alienígena."
   typefaceId: DefaultBold
   hideLanguageIcon: true
   hideLanguageName: true
@@ -250,7 +250,7 @@
 - type: language
   id: Arcturian
   name: "Arcturian"
-  description: "An ancient alien language from the Arcturian colonies."
+  description: "Uma antiga língua alienígena das colônias arcturianas."
   typefaceId: DefaultBold
   firstContactMeaning: language-Arcturian-first-contact
   languageIcon:
@@ -267,7 +267,7 @@
 - type: language
   id: Afrikaans
   name: "Afrikaans"
-  description: "An old Earth language."
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: ZA
@@ -279,8 +279,8 @@
 
 - type: language
   id: Brazilian
-  name: "Brazilian"
-  description: "An old Earth language."
+  name: "Brasileiro"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -293,8 +293,8 @@
 
 - type: language
   id: Ukrainian
-  name: "Ukrainian"
-  description: "An old Earth language."
+  name: "Ucraniano"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -306,8 +306,8 @@
 
 - type: language
   id: Korean
-  name: "Korean"
-  description: "An old Earth language."
+  name: "Coreano"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: KR
@@ -318,8 +318,8 @@
 
 - type: language
   id: Polish
-  name: "Polish"
-  description: "An old Earth language."
+  name: "polonês"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: PL
@@ -329,8 +329,8 @@
 
 - type: language
   id: Czech
-  name: "Czech"
-  description: "An old Earth language."
+  name: "Tcheco"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: CZ
@@ -341,8 +341,8 @@
 
 - type: language
   id: Turkish
-  name: "Turkish"
-  description: "An old Earth language."
+  name: "Turco"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: TR
@@ -354,8 +354,8 @@
 
 - type: language
   id: Swahili
-  name: "Swahili"
-  description: "An old Earth language."
+  name: "Suaíli"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: KE
@@ -368,8 +368,8 @@
 
 - type: language
   id: Italian
-  name: "Italian"
-  description: "An old Earth language."
+  name: "Italiano"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -382,8 +382,8 @@
 
 - type: language
   id: Irish
-  name: "Irish"
-  description: "An old Earth language."
+  name: "irlandês"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -396,8 +396,8 @@
 
 - type: language
   id: Finnish
-  name: "Finnish"
-  description: "An old Earth language."
+  name: "Finlandês"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: FI
@@ -410,8 +410,8 @@
 
 - type: language
   id: Hungarian
-  name: "Hungarian"
-  description: "An old Earth language."
+  name: "Húngaro"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -424,8 +424,8 @@
 
 - type: language
   id: Albanian
-  name: "Albanian"
-  description: "An old Earth language."
+  name: "Albanês"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -438,8 +438,8 @@
 
 - type: language
   id: Serbian
-  name: "Serbian"
-  description: "An old Earth language."
+  name: "Sérvio"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -451,8 +451,8 @@
 
 - type: language
   id: Lithuanian
-  name: "Lithuanian"
-  description: "An old Earth language."
+  name: "Lituano"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: LT
@@ -463,8 +463,8 @@
 
 - type: language
   id: Dutch
-  name: "Dutch"
-  description: "An old Earth language."
+  name: "Holandês"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: NL
@@ -476,8 +476,8 @@
 
 - type: language
   id: Persian
-  name: "Persian"
-  description: "An old Earth language."
+  name: "persa"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: IR
@@ -489,7 +489,7 @@
 - type: language
   id: Hindi
   name: "Hindi"
-  description: "An old Earth language."
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: IN
@@ -500,8 +500,8 @@
 
 - type: language
   id: Vietnamese
-  name: "Vietnamese"
-  description: "An old Earth language."
+  name: "vietnamita"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -513,8 +513,8 @@
 
 - type: language
   id: Indonesian
-  name: "Indonesian"
-  description: "An old Earth language."
+  name: "Indonésio"
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: ID
@@ -528,7 +528,7 @@
 - type: language
   id: Filipino
   name: "Filipino"
-  description: "An old Earth language."
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: PH
@@ -542,7 +542,7 @@
 - type: language
   id: Urdu
   name: "Urdu"
-  description: "An old Earth language."
+  description: "Uma antiga língua da Terra."
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
     state: PK
@@ -554,8 +554,8 @@
 
 - type: language
   id: Yoruba
-  name: "Yoruba"
-  description: "An old Earth language."
+  name: "Iorubá"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -569,7 +569,7 @@
 - type: language
   id: Esperanto
   name: "Esperanto"
-  description: "A constructed interlanguage."
+  description: "Uma interlíngua construída."
   typefaceId: DefaultItalic
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -582,8 +582,8 @@
 
 - type: language
   id: Swedish
-  name: "Swedish"
-  description: "An old Earth language."
+  name: "Sueco"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -596,8 +596,8 @@
 
 - type: language
   id: Slovak
-  name: "Slovak"
-  description: "An old Earth language."
+  name: "Eslovaco"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi
@@ -610,8 +610,8 @@
 
 - type: language
   id: Romanian
-  name: "Romanian"
-  description: "An old Earth language."
+  name: "Romeno"
+  description: "Uma antiga língua da Terra."
   typefaceId: DefaultBold
   languageIcon:
     sprite: /Textures/_RMC14/Interface/flags.rsi

@@ -2,10 +2,10 @@
   id: ForceOnForce
   alias:
   - forceonforce
-  name: Force on Force
+  name: Força contra Força
   showInVote: true
-  description: Two units face each other in combat.
-  minPlayers: 125
+  description: Duas grandes facções militares se enfrentam em combate intenso.
+  minPlayers: 50 #Dreammy Station Tweak, Default is 125
   requiresOpforVote: true
   requiresGovforVote: true
   supportedPlanets:
@@ -31,9 +31,9 @@
   id: Insurgency
   alias:
   - insurgency
-  name: Insurgency
+  name: Insurgência
   showInVote: true
-  description: Insurgency mode
+  description: Modo Insurgência.
   minPlayers: 40
   requiresGovforVote: true
   supportedPlanets:
@@ -55,9 +55,9 @@
 
 - type: gamePreset
   id: DistressSignal
-  name: Distress Signal
+  name: Sinal de socorro
   showInVote: true
-  description: Investigate a mysterious distress signal as government forces.
+  description: Investigue um sinal de socorro misterioso como forças do governo espacial.
   requiresGovforVote: true
   supportedPlanets:
 #  - AUPlanetLV747
@@ -81,11 +81,11 @@
   id: ColonyFall
   alias:
   - colonyfall
-  name: Colony Fall
+  name: A Queda da Colônia
   showInVote: true
   minPlayers: 0
   maxPlayers: 60
-  description: Live in an offworld colony as it falls into chaos.
+  description: Viva em uma colônia fora da Terra enquanto ela mergulha no caos e morte.
   supportedPlanets:
     - AUPlanetShepherdsPride
     - AUPlanetLV327
@@ -102,9 +102,9 @@
   id: Jailbreak
   alias:
   - jailbreak
-  name: Jailbreak
+  name: Fuga dos presos
   showInVote: false
-  description: Jailbreak mode
+  description: A Fuga dos presos
   rules:
   - AuVoteRule
 
@@ -112,9 +112,9 @@
   id: Prometheus
   alias:
   - prometheus
-  name: Prometheus
+  name: Prometeu
   showInVote: false
-  description: Prometheus mode
+  description: Modo Prometeu.
   rules:
   - AuVoteRule
 
@@ -122,8 +122,8 @@
   id: Criminal
   alias:
   - criminal
-  name: Criminal
+  name: Criminoso
   showInVote: false
-  description: Criminal mode
+  description: Modo criminoso
   rules:
   - AuVoteRule
