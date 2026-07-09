@@ -9,8 +9,6 @@
 // SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
-
-
 // Ported and edited from Dumont Station By DreammyRR in 2026 <161163471+Dreammyrr@users.noreply.github.com>
 
 using Content.Server.Players.PlayTimeTracking;

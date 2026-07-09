@@ -4,6 +4,7 @@
 // SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
+// Ported and edited from Dumont Station By DreammyRR in 2026 <161163471+Dreammyrr@users.noreply.github.com>
 
 using Content.Shared.Eui;
 using Robust.Shared.Serialization;
