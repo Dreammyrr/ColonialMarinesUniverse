@@ -43,7 +43,7 @@ jobs:
           START_DATE: ${{ inputs.start_date }}
 
       - name: Update changelog
-        run: Tools/update_changelog.py Resources/Changelog/CMU.yml
+        run: Tools/update_changelog.py Resources/Changelog/dreammy.yml
           Resources/Changelog/Parts --category ${{ inputs.category || 'CMU' }}
 
       - uses: stefanzweifel/git-auto-commit-action@v7.1.0
@@ -71,6 +71,6 @@ jobs:
       - name: Run Discord changelog script
         run: Tools/actions_changelogs_since_last_run.py
         env:
-          CHANGELOG_FILE: Resources/Changelog/CMU.yml
+          CHANGELOG_FILE: Resources/Changelog/dreammy.yml
           CHANGELOG_PREVIOUS_REF: HEAD^
           DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}

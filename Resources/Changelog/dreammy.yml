@@ -1,0 +1,19 @@
+Entries:
+- author: Dreammy
+  changes:
+  - message: Added changelog.
+    type: Add
+  - message: Removed changelog.
+    type: Remove
+  - message: Tweaked the changelog.
+    type: Tweak
+  - message: Fixed the changelogs.
+    type: Fix
+  - message: Mapped a changelog.
+    type: Map
+  - message: Coded a changelog.
+    type: Code
+  - message: Administered a changelog.
+    type: Admin
+  id: 1
+  time: '2026-07-10T06:20:55.0000000+00:00'

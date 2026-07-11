@@ -12,6 +12,7 @@ changelog-button = Changelog
 changelog-button-new-entries = Changelog (new!)
 
 changelog-tab-title-CMU = Colonial Marines Universe
+changelog-tab-title-dreammy = Colonial Dreamy
 changelog-tab-title-Changelog = Changelog
 changelog-tab-title-Admin = Admin
 changelog-tab-title-Maps = Maps
